@@ -1,4 +1,5 @@
 ## uArm Metal Getting Started Guide
+## uArm Metal Getting Started Guide
 
 1. Installation Guide
     - Screw foot brackets.  
