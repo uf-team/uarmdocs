@@ -2,4 +2,7 @@ uArm Documentation Center
 ==================================================
 .. toctree::
 
-   getting_started
+   docs/HISTORY
+   docs/README
+   docs/getting_started
+   docs/index

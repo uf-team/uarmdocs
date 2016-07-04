@@ -17,7 +17,7 @@ import sphinx_bootstrap_theme
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('docs'))
 
 # -- General configuration -----------------------------------------------------
 
@@ -65,7 +65,8 @@ release = '1.0.1'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+# This patterns also effect to html_static_path and html_extra_path
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -101,7 +102,15 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+    # Bootswatch (http://bootswatch.com/) theme.
+    #
+    # Options are nothing with "" (default) or the name of a valid theme such
+    # as "amelia" or "cosmo".
+    #
+    # Note that this is served off CDN, so won't be available offline.
+    'bootswatch_theme': "flatly",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -188,7 +197,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'uarmdocs.tex', u'uarm Documentation',
+  ('master_doc', 'uarmdocs.tex', u'uarm Documentation',
    u'Alex Tan', 'manual'),
 ]
 
@@ -218,7 +227,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'uarmdocs', u'uArm Documentation',
+    ('master_doc', 'uarmdocs', u'uArm Documentation',
      [u'Alex Tan'], 1)
 ]
 
@@ -232,7 +241,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'uarmdocs', u'uArm Documentation',
+  ('master_doc', 'uarmdocs', u'uArm Documentation',
    u'Alex Tan', 'uArm Docs', 'uArm Documentation Center',
    ''),
 ]
