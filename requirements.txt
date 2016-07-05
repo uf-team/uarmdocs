@@ -1,1 +1,1 @@
-sphinx_bootstrap_theme>=0.49
+sphinx_bootstrap_theme>=0.4.9
