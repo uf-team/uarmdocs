@@ -60,17 +60,17 @@ Please open `terimnal.app`, then copy & paste below command install uArm Envirom
 It would require you input your password several times to proceed.
 
 After Done.
-You could use below commands.
-- `uarm-firmware` - upgrade your uArm firmware
-- `uarm-calibrate` - calibrate your uArm
-- `uarm-listport` - show all connected uArm
+You could use below commands.  
+- `uarm-firmware` - upgrade your uArm firmware  
+- `uarm-calibrate` - calibrate your uArm  
+- `uarm-listport` - show all connected uArm  
 
 
 #### Linux
 
 Requirement:  
-- pip
-- avrdude
+- pip  
+- avrdude  
 
 You could use `apt` or `yum` something like **Package Management Tool**
 
@@ -78,8 +78,7 @@ You could use `apt` or `yum` something like **Package Management Tool**
 
 After installed the Requirement package, please use `pip install pyuarm` install uArm Enviroment
 
-After Done.
-You could use below commands.
+After Done.You could use below commands.  
 - `uarm-firmware` - upgrade your uArm firmware
-- `uarm-calibrate` - calibrate your uArm
-- `uarm-listport` - show all connected uArm
+- `uarm-calibrate` - calibrate your uArm  
+- `uarm-listport` - show all connected uArm  
