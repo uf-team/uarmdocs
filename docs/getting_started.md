@@ -48,4 +48,36 @@
     Upgrade your firmware.
 - uClient - the software that you operate to control the movement of uArm
 - *Calibrate* - Help you calibrate your uArm. (your uArm has been calibrated by default, we don't recommend that you calibrate by yourself)
--
+
+#### Mac
+
+Please open `terimnal.app`, then copy & paste below command install uArm Enviroment.
+
+```
+    bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
+```
+
+It would require you input your password several times to proceed.
+
+After Done.
+You could use below commands.
+- `uarm-firmware` - upgrade your uArm firmware
+- `uarm-calibrate` - calibrate your uArm
+- `uarm-listport` - show all connected uArm
+#### Linux
+
+Requirement:  
+- pip
+- avrdude
+
+You could use `apt` or `yum` something like **Package Management Tool**
+
+`sudo apt-get install python-pip python-dev build-essential avrdude`
+
+After installed the Requirement package, please use `pip install pyuarm` install uArm Enviroment
+
+After Done.
+You could use below commands.
+- `uarm-firmware` - upgrade your uArm firmware
+- `uarm-calibrate` - calibrate your uArm
+- `uarm-listport` - show all connected uArm
