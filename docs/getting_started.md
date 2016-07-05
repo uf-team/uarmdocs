@@ -74,7 +74,9 @@ Requirement:
 
 You could use `apt` or `yum` something like **Package Management Tool**
 
-`sudo apt-get install python-pip python-dev build-essential avrdude`
+```
+sudo apt-get install python-pip python-dev build-essential avrdude
+```
 
 After installed the Requirement package, please use `pip install pyuarm` install uArm Enviroment
 
