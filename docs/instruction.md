@@ -42,6 +42,7 @@ Servo 2 - Right Servo
 我们使用的电机默认使用默认的`servoWrite()`函数，每个电机的操作单位是度，范围从`0`度到`180`度。在装配的时候，我们都是依照固定的度数把电机安装到机械臂上的。
 下图是机械臂默认的安装度数
 ![servo setup](img/instruction/uarm_servo_setup.jpg)
+<center> 1.1 电机角度图 </center>
 - Servo 0 是90度，它处与中间位置  
 - Servo 1 和 Servo 2 都是处于 90度的位置
 - Servo 3 也是处于90度位置
