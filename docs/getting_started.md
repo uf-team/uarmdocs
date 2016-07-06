@@ -51,7 +51,13 @@
 
 #### Mac
 
-Please open `terimnal.app`, then copy & paste below command install uArm Enviroment.
+
+Requirement:  
+- brew  
+- pip  
+- avrdude  
+
+You could use below command to install all uArm Enviroment, Please open `terimnal.app`, then copy & paste below command install uArm Enviroment.
 
 ```
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
@@ -78,7 +84,11 @@ You could use `apt` or `yum` something like **Package Management Tool**
 sudo apt-get install python-pip python-dev build-essential avrdude
 ```
 
-After installed the Requirement package, please use `pip install pyuarm` install uArm Enviroment
+After installed the Requirement package, please use below command to install uArm Enviroment
+
+```
+pip install pyuarm
+```
 
 After Done.You could use below commands.  
 - `uarm-firmware` - upgrade your uArm firmware
