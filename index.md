@@ -6,3 +6,4 @@ uArm Documentation Center
    docs/README
    docs/getting_started
    docs/index
+   docs/instruction

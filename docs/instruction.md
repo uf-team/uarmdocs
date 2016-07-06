@@ -1,16 +1,20 @@
 # 开发者指南 Developer Instruction
 
-## uArm 运行过程
+## uArm 基本教程
+如果你刷的是我们的通用固件，我们在固件里面包括了uArm Library 还有uArm Protocol 通信协议。
 uArm 在通电以后
-1. 会读取当前的角度，然后attach所有电机，如果uArm没有校正，它会发出一声长鸣
-
+1. 会读取当前的角度，然后会attach所有电机。
+    *如果uArm没有校正，它会发出一声长鸣，要求你进行校正。你可以使用我们的开发者工具`uarm-calibrate`*
+2. 然后uArm就自动进入准备状态，如果这个时候你发送了指令（通过uArmProtocol协议），uArm自动进行解析，并执行相应的动作，如果你希望自己书写与uArm通信，你可以参照通信协议
+3. 我们更推荐的方式使用我们已经封装好的API接口，你无需要再去理解复杂的协议，并且也无需要学习串口编程。上手即可用。
+4. 在你开始任何项目之前，请认真阅读以下的指南，不能说百分之百解决你遇到的问题，但是起码你有一些基本的知识。
 
 ## 机械运动 Mechanical Motion
 
 ### 电机示意图
 uArm 是通过4个电机来运动的。如下图所示
 ![uarm servo](img/instruction/uarm_servo.jpg)
-
+<center>图1.0 电机示意图</center>
 - Servo 0 - Bottom Servo
 对应的Arduino PWM PIN D11, Analog PIN 2
 这个电机控制uArm的地盘旋转
@@ -37,6 +41,7 @@ Servo 2 - Right Servo
 
 我们使用的电机默认使用默认的`servoWrite()`函数，每个电机的操作单位是度，范围从`0`度到`180`度。在装配的时候，我们都是依照固定的度数把电机安装到机械臂上的。
 下图是机械臂默认的安装度数
+
 - Servo 0 是90度，它处与中间位置  
 - Servo 1 和 Servo 2 都是处于 90度的位置
 - Servo 3 也是处于90度位置
@@ -68,8 +73,41 @@ Servo 2 - Right Servo
 2. 其次，一般我们都会以固定角度把电机安装到机械臂上。就如 电机控制里图2一样，但是，所有的机械臂都是人工装配的，所以会有人工装配误差。这个误差也需要用人手去测量。
 
 ###### 如何校正
-
+在开发者工具的section会专门介绍校正的工具。
 
 ### 三维坐标系
 
-直接控制全部电机的转动，可以很直接的控制uArm的运动，但是很不直观，也很危险。所以我们建立一个三维坐标系(x,y,z)，以`厘米`为单位。
+直接控制全部电机的转动，可以很直接的控制uArm的运动，但是很不直观，也很危险。所以我们建立一个三维坐标系(x,y,z)，以`厘米`为单位。请看下图
+![coordinate](img/instruction/uarm_coordinate.png)
+<center>图1.1 坐标系示意图</center>
+上图详细标注了uArm的六个连接点(O, A, B, C, D, E)，以及5个连接线(OA, AB, BC, CD, DE)之间的长度，X, Y, Z的最大最小值。
+
+#### 连接点：  
+- O 原点 也就是 (0,0,0)
+- A（左右）电机的轴心中间的那个点
+- B 连接前后臂的螺丝位置（准确说是两个螺丝的中间点）
+- C 连接前臂与前端的螺丝位置 （同上）
+- D 吸头底部的中间点
+- E 点其实是不存在，是C的平行线与E的垂直线的交点
+
+#### 连接线
+- OA = 10 cm  轴心到原点的高度
+- AB = 15 cm  后臂长
+- BC = 16 cm  前臂长
+- CE = 3.5 cm 前端长
+- DE = 6 cm   吸头高度
+
+#### 极限值
+- X 的范围：-34.5cm ~ 34.5cm
+    Max X =  AB + BC + CD
+
+- Y 的范围：9cm ~ 34.5cm，
+    Max Y = Max X
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\fn_phv&space;MINY&space;=&space;\sqrt{\left&space;(&space;BC&space;\right&space;)^{2}&space;-&space;\left&space;(&space;AB&space;\right&space;)^{2}}&space;&plus;&space;CE" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\fn_phv&space;MINY&space;=&space;\sqrt{\left&space;(&space;BC&space;\right&space;)^{2}&space;-&space;\left&space;(&space;AB&space;\right&space;)^{2}}&space;&plus;&space;CE" title="MINY = \sqrt{\left ( BC \right )^{2} - \left ( AB \right )^{2}} + CE" /></a>
+    AB，BC，AC形成的一个直角三角形，BAC为直角。如以上公式：
+
+- Z 的范围：-12cm ~ 19cm  
+    Max Z = OA + AB -DE
+    Min Z = BC - DE - OA
+
+#### 活动范围
