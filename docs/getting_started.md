@@ -51,7 +51,6 @@
 
 #### Mac
 
-
 Requirement:  
 - brew  
 - pip  
