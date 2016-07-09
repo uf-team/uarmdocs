@@ -50,6 +50,7 @@
 ![](img/getting_started/09USB.jpg)
 
 ### Software Installation
+(description)
 
 #### Windows
 
@@ -141,7 +142,7 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 4. You may reset uArm to the default position.
 
 #### Mac
-
+##### Step 1 -
 You could use below command to install all uArm Enviroment, Please open `terimnal.app`, then copy & paste below command install uArm Enviroment.
 
 ```
