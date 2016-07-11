@@ -50,7 +50,11 @@
 ![](img/getting_started/09USB.jpg)
 
 ### Software Installation
-(description)
+The installation method on Windows, MacOS and Linux are different. Please directly go to the section relevant to you.
+
+Windows
+MacOS
+Linux
 
 #### Windows
 
