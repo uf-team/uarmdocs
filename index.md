@@ -7,3 +7,4 @@ uArm Documentation Center
    docs/getting_started
    docs/index
    docs/instruction
+   docs/instruction_english

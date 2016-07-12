@@ -1,5 +1,6 @@
 #  uArm Developer Knowledge Base
-### Makers are from all jacks of life, so do uArm Masters!
+
+## Makers are from all jacks of life, so do uArm Masters!
 We know you are a developer, but maybe you are an expert of Software Programming, a dedicated Industrial Designer or smart Mechanical Engineer,
 who is curious about Robot and eager to learn. We aslo can see many of you are artists, and couldn't find a smart arm to help you to build your creative ideas.
 
@@ -57,12 +58,12 @@ These two servos are used to control *front arm*`Link1`and *back arm*`Link2`.
 Related with Arduino PWM PIN D10, Analog PIN 3
 This mini-servo is responsible for the rotation of end-effector of uArm, for example, Suction cup.
 
-### servo
+### Servo
 
 When we talk about the servo control, we have to mention Arduino. Thanks to Arduino, we can have thousand open sourced libraries.
 For uArm, our servo motor supports Arduino's *servo.h* library.
 
-#### Servo Attach Detach
+#### Servo Attach Detach  
 
 Before using servo, it is a must to attach servos. At this time, servos will be locked.
 
@@ -82,7 +83,7 @@ due to the restriction of its Mechanical design, in fact, it can not cover such 
 The picture **below** is the work range of Left and Right Servo, on the condition that only one servo is
 working. The servo on the left can range from 0° to 150° and the one on the right is 20° to 150°.
 
-The servo at the base and the mini servo on top can range 0° to 180°. Like the picture **below**,
+The servo at the base and the mini servo on top can range 0° to 180°. Like the picture **below**
 
 底部的电机，和前端的电机都是0到180度，比较简单。如下图
 底部电机，与前端电机的转动范围e
