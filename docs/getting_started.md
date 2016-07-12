@@ -52,11 +52,11 @@
 ### Software Installation
 The installation method on Windows, MacOS and Linux are different. Please directly go to the section relevant to you.
 
-Windows
-MacOS
-Linux
+[Windows](#win)  
+[MacOS](#mac)  
+[Linux](#linux)
 
-#### Windows
+#### <a name="win"></a>Windows
 
 ##### Step 1 - Download
 
@@ -145,34 +145,64 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 <br>
 4. You may reset uArm to the default position.
 
-#### Mac
-##### Step 1 -
-You could use below command to install all uArm Enviroment, Please open `terimnal.app`, then copy & paste below command install uArm Enviroment.
+#### <a name="mac"></a>MacOS
+##### Step 1 - Open `terminal.app`  
+<br>
+![](img/getting_started/macinstall-terminal.png)
+<center>Search `terminal.app` via Spotlight Search</center>
 
-```
+##### Step 2 - Enter Command to Start Installation
+
+**2.1 Copy & paste the command below to install uArm Enviroment:**
+
+`
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
-```
+`
 
-It would require you input your password several times to proceed.
 
-After Done.
-You could use below commands.  
+<center>
+![](img/getting_started/mac-01)  
+<br>
+![](img/getting_started/mac03)
+<br>
+<br>
+<br>
+</center>
+**2.2 When the installation is finished, you will see the words below:**
+<center>![](img/getting_started/macinstall04 finish install.png)</center>
+<br>
+**2.3 After installation, you could use commands below:**    
 - `uarm-firmware` - upgrade your uArm firmware  
-- `uarm-calibrate` - calibrate your uArm  
 - `uarm-listport` - show all connected uArm  
+<br>
+<center>![](img/getting_started/mac04)</center>
+
+##### Step 3 - Download uClient
+**Please download uClient from our official website.  **  <center>
+![  ](img/getting_started/mac-changeprivacy.png)
+Change the privacy setting on your Mac  
+(or you are not able to run uClient)
+<br>
+<br>
+![  ](img/getting_started/mac-uclient folder.png)  
+Run `uarm_client.exe`
 
 
-#### Linux
+</center>
 
-Requirement:  
+
+#### <a name="linux"></a>Linux
+
+##### Step 1 Install the required environment
+Requirement
 - pip  
 - avrdude  
 
 You could use `apt` or `yum` something like **Package Management Tool**
 
-```
+`
 sudo apt-get install python-pip python-dev build-essential avrdude
-```
+`
 
 After installed the Requirement package, please use below command to install uArm Enviroment
 
@@ -181,8 +211,7 @@ pip install pyuarm
 ```
 
 After Done.You could use below commands.  
-- `uarm-firmware` - upgrade your uArm firmware  
-- `uarm-calibrate` - calibrate your uArm  
+- `uarm-firmware` - upgrade your uArm firmware   
 - `uarm-listport` - show all connected uArm  
 
 
