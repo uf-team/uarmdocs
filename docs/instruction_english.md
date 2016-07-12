@@ -252,7 +252,10 @@ Servo has less offset when working in the range between `40°` and `140°`;
 接下来开始讲解，附带的一些开发工具的讲解。
 
 我们的uArm套件都是用python写的，目的是辅助用户，专注于开发。
-## uArm Developer Tools
+## uArm Developer Tools Kit
+Now lets see uArm Developer Tools Kit. The reason why we make developer Tools is that we hope our users can focus on developing cool projects, making more possibilities of uArm and achieve their purpose or great ideas of hacking!
+
+It is written by python, so first of all, you need to insall uArm's working environment of Python.
 
 ### 安装教程
 
@@ -263,13 +266,28 @@ Servo has less offset when working in the range between `40°` and `140°`;
 - 由于Windows没有内置python环境，如果你需要使用这些开发套件，你必须先安装python环境。[Python Environment][python-download-link]
 - 然后你需要安装`pip`, 这里推荐[pip-for-windows][pip-for-windows-link]
 - 装完pip以后，你就可以通过以下命令`pip install pyuarm`安装uArm的套件。
+### Installation Tutorial
+### Windows
 
+- As Python is not defaulted inside of Windows, if you want to use these developing tools, please INSTALL Python first. [Click here, download and install Python. ](python-download-link)
+- Next, please install `pip`. We recommend [pip-for-windows][pip-for-windows-link]
+- now you can install uArm' tool kit by sending the command `pip install pyuarm`.
 
   [python-download-link]: https://www.python.org/downloads/ "PythonDownloadLink"
   [pip-for-windows-link]: https://sites.google.com/site/pydatalog/python/pip-for-windows "pip-for-windows"
 
-#### Mac
 
+
+#### Mac
+What you need:
+- pip
+- avrdude
+
+Strongly recommend, because it is a really very convenient tool that you type only one install command:
+```
+bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
+```
+This command will help you with the installation and very efficient:)
 需要:
 - pip
 - avrdude
@@ -281,6 +299,7 @@ Servo has less offset when working in the range between `40°` and `140°`;
 ```
 
 这个命令会帮你安装所有需要用到的运行环境，非常方便哦。
+#### Mac
 
 
 如果你希望自己安装，你也按照下面的步骤安装：
@@ -289,6 +308,11 @@ Servo has less offset when working in the range between `40°` and `140°`;
 - 如果你需要固件升级固件，你还要需要安装`avrdude`，一个最方便的方法是安装 [Homebrew][Homebrew-link]
 - 安装完homebrew，以后你就可以直接用`brew install avrdude`
 
+If you would like to install by yourself, you can do so:
+- First, idnstall pip - `sudo easy_install pip`
+- Next, install pyuarm `pip install pyuarm`
+- if you need to upgrade the firmware, you need to install `avrdude`-refer to [Homebrew][Homebrew-link], a quick and easy way to make it.
+- Completing homebrew, you can start `brew install avrdude`.
 
   [Homebrew-link]: http://brew.sh "Homebrew"
 
@@ -312,3 +336,22 @@ sudo apt-get install python-pip python-dev build-essential avrdude
 - uarm-calibrate 校正uarm
 - uarm-listport 检查当前可用的uarm端口
 - uarm-miniconsole 一个纯命令行的简单控制端软件 (To-Do)
+#### Linux
+What you need:
+- pip
+-avrdude
+
+You can use the *installation tool* in the release version of Linux,
+for example, in the *debain*, you can just use:
+```
+sudo apt-get install python-pip python-dev build-essential avrdude
+```
+After installation, you can use `pip install pyuarm` installation tools.
+
+#### Tutorials
+
+ONCE YOU COMPLETE INSTALLATION OF THE DEVELOPER TOOLS KIT, YOU CAN TRY:
+- uarm-firmware upgrade and check the firmware version.
+- uarm-calibrate Calibrate uArm
+- uarm-listport Check the port/COM for uArm to use
+- uarm-miniconsole A Software with Command Control Only (To-Do)
