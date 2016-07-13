@@ -43,8 +43,7 @@ and serial programming. Our APIs are handy for you to use!
 ###  Servo-Motor control Schematics
 uArm is controlled by 4 Servo, marked in the pic 1.0.
 ![uarm servo](img/instruction/uarm_servo.jpg)
-<center>Pic1.0 Servo Control Schematics</center>
-
+Pic1.0 Servo Control Schematics
 - Servo 0 - Bottom Servo
 Related with Arduino PWM PIN D11, Analog PIN 2
 This servo is used to control uArm's base rotation.
@@ -74,10 +73,10 @@ We use default functions for servo `servoWrite()`. The unit of its rotation is *
 When assembling,  we install the servo to uArm with a fixed angle. In the pic 1.1, you can see the default angles for assemble.
 
 ![servo setup](img/instruction/uarm_servo_setup.jpg)
-<center>1.1 servo angles and ranges</center>
-- Servo 0 is 90°, which is in the middle.   
-- Servo 1 and Servo 2 are all in the degree of 90  
-- Servo 3 90°.  
+1.1 servo angles and ranges
+- Servo 0 is 90°, which is in the middle.
+- Servo 1 and Servo 2 are all in the degree of 90
+- Servo 3 90°.
 Though the rotation range for servo is 0° to 180°,
 due to the restriction of its Mechanical design, in fact, it can not cover such big range.
 
@@ -86,11 +85,7 @@ working. The servo on the left can range from 0° to 150° and the one on the ri
 
 The servo at the base and the mini servo on top can range 0° to 180°. Like the picture **below**
 
-底部的电机，和前端的电机都是0到180度，比较简单。如下图
-底部电机，与前端电机的转动范围e
-However, due to the Mechanical Linkage of L/R servos, when they work together, the range is limited.
-但是左右的电机联动的时候，两个联动的活动范围是一个下图这样的面积。
-左右电机运动范围图
+
 Now you can control the movement of uArm by read the servo's angle, but this is not visible,
 and somehow dangerous. Because the linkage of servos may lock each other, it is a factor lead to `burn` the servo.
 We would like to suggest you to construct a three dimention coordination. Please refer to "*Three Dimention Coordination*" in the **pic??????**.
