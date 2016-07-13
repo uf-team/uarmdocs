@@ -2,4 +2,5 @@ uArm Documentation Center
 ==================================================
 .. toctree::
 
-   docs/instruction_english
+   docs/HISTORY
+   docs/instruction
