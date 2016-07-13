@@ -43,7 +43,8 @@ and serial programming. Our APIs are handy for you to use!
 ###  Servo-Motor control Schematics
 uArm is controlled by 4 Servo, marked in the pic 1.0.
 ![uarm servo](img/instruction/uarm_servo.jpg)
-Pic1.0 Servo Control Schematics
+<center>Pic1.0 Servo Control Schematics</center>
+
 - Servo 0 - Bottom Servo
 Related with Arduino PWM PIN D11, Analog PIN 2
 This servo is used to control uArm's base rotation.
@@ -73,10 +74,10 @@ We use default functions for servo `servoWrite()`. The unit of its rotation is *
 When assembling,  we install the servo to uArm with a fixed angle. In the pic 1.1, you can see the default angles for assemble.
 
 ![servo setup](img/instruction/uarm_servo_setup.jpg)
-1.1 servo angles and ranges
-- Servo 0 is 90°, which is in the middle.
-- Servo 1 and Servo 2 are all in the degree of 90
-- Servo 3 90°.
+<center>1.1 servo angles and ranges</center>
+- Servo 0 is 90°, which is in the middle.   
+- Servo 1 and Servo 2 are all in the degree of 90  
+- Servo 3 90°.  
 Though the rotation range for servo is 0° to 180°,
 due to the restriction of its Mechanical design, in fact, it can not cover such big range.
 
