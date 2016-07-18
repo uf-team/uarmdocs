@@ -25,10 +25,11 @@
 5. USB Cable x1  
 6. Foot brackets x 4(with 8 screws)  
 7. Screw Driver x1  
-
-
+<br>
+<br>
 ## Assembly Instructions
-
+<br>
+<br>
 <center>**Step 1** Install the 4 foot brackets</center>
 ![](img/getting_started/05foot bracket.jpg)
 <center>Please be aware the screws should be inserted from the bottom to top.</center>
@@ -49,14 +50,15 @@
 2. Connect uArm to computer with USB
 ![](img/getting_started/09USB.jpg)
 
+
 ### Software Installation
 The installation method on Windows, MacOS and Linux are different. Please directly go to the section relevant to you.
 
-[Windows](#win)  
-[MacOS](#mac)  
+[Windows](#w)  
+[MacOS](#m)  
 [Linux](#linux)
 
-#### Windows
+#### <a name="w"></a>Windows
 
 ##### Step 1 - Download
 
@@ -108,9 +110,9 @@ Click on **"Getting Started Pack"** on the download page and you will get all so
 - You will be asked to download JRE (Java Runtime Environment) IF your computer does not
 have one.
 - Press OK , download JRE, and run the exe
-- This download requirement will not pop up again after you finish JRE setup.
+- This download requirement will not pop up again after you finish JRE setup.  
 
-#### MacOS
+#### <a name="m"></a>MacOS  
 ##### Step 1 - Open `terminal.app`  
 <br>
 ![](img/getting_started/macinstall-terminal.png)
