@@ -1,5 +1,35 @@
 # 开发者指南 Developer Instruction
 
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [开发者指南 Developer Instruction](#开发者指南-developer-instruction)
+	- [uArm 基本知识讲解](#uarm-基本知识讲解)
+	- [机械运动 Mechanical Motion](#机械运动-mechanical-motion)
+		- [电机示意图](#电机示意图)
+		- [电机](#电机)
+			- [电机 Attach Detach](#电机-attach-detach)
+			- [电机的转动范围](#电机的转动范围)
+		- [读取电机角度](#读取电机角度)
+		- [校正](#校正)
+					- [为什么需要校正？](#为什么需要校正)
+					- [如何校正](#如何校正)
+		- [三维坐标系](#三维坐标系)
+			- [连接点：](#连接点)
+			- [连接线](#连接线)
+			- [极限值](#极限值)
+			- [活动范围](#活动范围)
+			- [精准度与偏差](#精准度与偏差)
+	- [uArm套件的使用](#uarm套件的使用)
+		- [安装教程](#安装教程)
+			- [Windows](#windows)
+			- [Mac](#mac)
+			- [Linux](#linux)
+			- [使用教程](#使用教程)
+				- [uarm-firmware 固件帮助程序](#uarm-firmware-固件帮助程序)
+
+<!-- /TOC -->
+
 ## uArm 基本知识讲解
 如果你刷的是我们的通用固件，我们在固件里面包括了uArm Library 还有uArm Protocol 通信协议。
 uArm 在通电以后  
@@ -119,10 +149,16 @@ Servo 2 - Right Servo
 
 #### 活动范围
 
-通过上面的极限值，你大概可以想象到，uArm是什么样的一个活动范围。但是uArm 的活动范围并是一个不规则的范围。下图是实际uArm的活动范围。有些不能达的目标点是很危险，我们默认会对不能到达的地方做一些限制，并返回一个错误码。(并且我们提供了一个可以检查这个点能不能到达的函数 - Todo)
+通过上面的极限值，你大概可以想象到，uArm是什么样的一个活动范围。但是uArm 的活动范围是一个不规则的范围。下图是实际uArm的活动范围。有些不能达的目标点是很危险，我们默认会对不能到达的地方做一些限制，并返回一个错误码。(并且我们提供了一个可以检查这个点能不能到达的函数 - Todo)
 
+下图是一个侧面的活动范围，你可能发现，这个活动范围跟极限值有一点偏差。极限值是通过纯理论纯几何方式测量，而这个是用建模软件算出来，有一些机械结构的限制，导致活动范围并没有那么大。（以最大距离来说，最大距离并不是一条直线，会稍微有点弯曲，所以不能完全到达，极限值所在的位置）
 ![range](img/instruction/uarm_dimension.png)
-<center>图1.3 坐标系示意图</center>
+<center>图1.3 活动范围侧面图</center>  
+
+
+下图是俯视的活动范围图，这个距离是以`吸头能吸到桌面`为基准的范围，所以范围变小。
+![](img/instruction/top_area_with_num_grey.jpg)
+<center>图1.4 俯视活动范围图</center>  
 
 #### 精准度与偏差
 
@@ -152,8 +188,6 @@ Servo 2 - Right Servo
 - 装完pip以后，你就可以通过以下命令`pip install pyuarm`安装uArm的套件。
 
 
-  [python-download-link]: https://www.python.org/downloads/ "PythonDownloadLink"
-  [pip-for-windows-link]: https://sites.google.com/site/pydatalog/python/pip-for-windows "pip-for-windows"
 
 #### Mac
 
@@ -171,13 +205,12 @@ Servo 2 - Right Servo
 
 
 如果你希望自己安装，你也按照下面的步骤安装：  
-- 首先安装pip - `sudo easy_install pip`
-- 然后安装pyuarm `pip install pyuarm`
-- 如果你需要固件升级固件，你还要需要安装`avrdude`，一个最方便的方法是安装 [Homebrew][Homebrew-link]
-- 安装完homebrew，以后你就可以直接用`brew install avrdude`
+- 首先安装pip - `sudo easy_install pip`  
+- 然后安装pyuarm `pip install pyuarm`  
+- 如果你需要固件升级固件，你还要需要安装`avrdude`，一个最方便的方法是安装 [Homebrew][Homebrew-link]  
+- 安装完homebrew，以后你就可以直接用`brew install avrdude`  
 
 
-  [Homebrew-link]: http://brew.sh "Homebrew"
 
 #### Linux
 
@@ -199,3 +232,39 @@ sudo apt-get install python-pip python-dev build-essential avrdude
 - uarm-calibrate 校正uarm
 - uarm-listport 检查当前可用的uarm端口
 - uarm-miniconsole 一个纯命令行的简单控制端软件 (To-Do)
+
+如果上述命令不能用，亦可以使用这种方式：  
+- python -m pyuarm.tools.firmware_helper  
+- python -m pyuarm.tools.calibrate  
+- python -m pyuarm.tools.list_uarms  
+- python -m pyuarm.tools.miniconsole  
+
+##### uarm-firmware 固件帮助程序
+
+uarm-firmware 可以帮助你更新固件，查看固件版本，检查最新版本
+
+以下是使用帮助：
+```
+$ uarm-firmware -h
+No uArm is connected.
+usage: uarm-firmware [-h] [-d] [-f [FORCE]] [-c [CHECK]] [-p [PORT]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d, --download        download firmware into firmware.hex
+  -f [FORCE], --force [FORCE]
+                        without firmware path, flash default firmware.hex,
+                        with firmware path, flash the firmware, eg. -f
+                        Blink.ino.hex
+  -c [CHECK], --check [CHECK]
+                        remote - lateset firmware release version, local -
+                        read uArm firmware version
+  -p [PORT], --port [PORT]
+                        provide port number
+```
+
+默认不带参数的时候是会对比uArm的版本和远程的版本，如果远端版本比较新，就会提示是否要更新。如果一定要强制更新，你可以使用`uarm-firmware -d` + `uarm-firmware -f`进行强制刷新
+
+ [Homebrew-link]: http://brew.sh "Homebrew"
+ [python-download-link]: https://www.python.org/downloads/ "PythonDownloadLink"
+ [pip-for-windows-link]: https://sites.google.com/site/pydatalog/python/pip-for-windows "pip-for-windows"
