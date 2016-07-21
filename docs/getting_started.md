@@ -12,7 +12,7 @@
 3. [Assembly Instructions](#Assembly)
 4. [Operation Instructions](#Operation)  
    4.1 [Preparation](#Preparation)  
-   4.2 [Software Installation](#Software)
+   4.2 [Software Installation](#Software)  
    4.3 [Control uArm via uClient](#uClient)
 5. [Community Support](#Community)
 
@@ -45,9 +45,11 @@
 ![](img/getting_started/05foot bracket.jpg)
 <center>Please be aware the screws should be inserted from the bottom to top.</center>
 <br>
+<br>
 <center>**Step 2** Install the Pump</center>
 ![](img/getting_started/06screws.jpg)  
 <center>2.1 Insert 2 screws to install the pump</center>
+<br>
 <br>
 ![](img/getting_started/07pump-pipe.jpg)
 <center>2.2 Attach the Cable and the Pipe</center>
@@ -78,9 +80,7 @@ Please download the following softwares from the official download page:
 - **uClient** - the software that you operate to control the movement of uArm
 - **Firmware Helper** - to enable uArm to recognize the operations you made via uClient
     Upgrade your firmware.
-- **Calibration Tool** (for DEVELOPERS) - Your uArm has been calibrated by default. Please DON'T calibrate uArm by yourself UNTIL
 
-Click on **"Getting Started Pack"** on the download page and you will get all softwares above.
 
 ##### Step 2 - Intall the Driver  
 <br>
@@ -122,6 +122,8 @@ have one.
 - Press OK , download JRE, and run the exe
 - This download requirement will not pop up again after you finish JRE setup.
 
+<br>
+<br>
 #### MacOS <a name="MacOS"></a>
 
 ##### Step 1 - Open `terminal.app`  
@@ -155,7 +157,7 @@ have one.
 <center>![](img/getting_started/mac04)</center>
 
 ##### Step 3 - Download uClient
-**Please download uClient from our official website.  **  <center>
+**Please download uClient from our official website.**  <center>
 ![  ](img/getting_started/mac-changeprivacy.png)
 Change the privacy setting on your Mac  
 (or you are not able to run uClient)
@@ -206,11 +208,11 @@ You could use following commands in your future usage:
 #### Step 2 – Familiarize with uClient
 ![](img/getting_started/13 uclient 5.png)
 
-**
-1 － Control uArm movement along X, Y, Z Axis.  
+
+**1 － Control uArm movement along X, Y, Z Axis.**  
 <br>
-2 － Control the end-effector (Suction Cup/Gripper/Universal Holder)  
-**  
+**2 － Control the end-effector (Suction Cup/Gripper/Universal Holder)**  
+
 
 ＊ You may rotate the suction cup from 0° to 180° by moving the yellow line. Rotation does not
 apply to Gripper or Universal Holder.  
@@ -242,10 +244,12 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 ## Community Support <a name="Community"></a>
 <center>
 Welcome to the uArm Community!
-<center>
+<br>
 [Customer Service](http://customer.ufactory.cc/)
-<center>
+<br>
 [Official Forum](https://forum.ufactory.cc/)
 </center>
-<br><center>
+<br>
+<center>
 [Reddit](https://www.reddit.com/r/uArm ) | [Youtube](https://www.youtube.com/channel/UCyy5ekYtq35jFtPpY3O_tVA ) | [Facebook](https://www.facebook.com/Ufactory2013) | [Twitter](https://twitter.com/UFACTORY_UF ) | [Instagram](https://www.instagram.com/ufactoryofficial/)  
+</center>
