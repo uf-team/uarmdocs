@@ -48,17 +48,18 @@
 <br>
 <center>**第 2 步** 安装气泵</center>
 <center>![](img/getting_started/06screws.jpg)</center>
-<center>2.1 用2颗螺丝将气泵安装在底座上</center>
+<center>2.1 - 用2颗螺丝将气泵安装在底座上</center>
 <br>
 <br>
 <center>![](img/getting_started/07pump-pipe.jpg)</center>
-<center>2.2 如图，将气管和黑色线缆接到气泵上</center>
+<center>2.2 - 如图，将气管和黑色线缆接到气泵上</center>
 
 ## 操作说明 <a name="Operation"></a>
 ### 准备工作 <a name="Preparation"></a>
 1. 接通电源
 <center>![](img/getting_started/08power on.jpg)</center>
 <center>红灯亮起即已接通电源</center>
+<br>
 <br>
 2. 用USB将uArm连接到电脑
 <center>![](img/getting_started/09USB.jpg)</center>
@@ -95,10 +96,10 @@
 
 ##### 第 3 步 – 安装及更新固件
 
-<center>![](img/getting_started/11firmware-1.png)</center>
+<center>![](img/getting_started/11firmware-1.png)</center>  
 <center>**3.1** – 解压，运行*firmware_helper_exe*</center>
 <br>
-<center>![](img/getting_started/11firmware-win check.jpg)</center>
+<center>![](img/getting_started/11firmware-win check.jpg)</center>  
 <center>**3.2** – 检查固件，确保已是最新版本</center>
 （固件会不定时更新，最新版本号以您看到的弹窗实际所示为准）
 - 窗口将自动显示：1) uArm 端口号；2）现有固件版本，以及最新固件版本
@@ -109,11 +110,11 @@
 
 ##### 第 4 步 – 安装JRE (仅在第一次安装uClient时需要)
 
-<center>![](img/getting_started/12-uclient1.png)</center>
+<center>![](img/getting_started/12-uclient1.png)</center>  
 <center>**4.1** – 运行*uClient.exe*</center>
 <br>
 <center>![](img/getting_started/12-uclient2.png)</center>
-<center>![](img/getting_started/12-uclient3.png)</center>
+<center>![](img/getting_started/12-uclient3.png)</center>  
 
 <center>**4.2** – 下载JRE</center>
 <br>
@@ -228,6 +229,7 @@ pip install pyuarm
 **当 uClient 界面如下图所示，您就可以开始用体感控制 uArm 了！**
 <center>![](img/getting_started/15 leap motion3.png)</center>
 <center>您可拖动Minimum Z数值条改变uArm在 Leap Motion控制中的Z轴最低点</center>
+<br>
 <br>
 **4 － 您可随时将uArm重置到初始位置。**
 
