@@ -27,7 +27,8 @@
 
 ## uArm Metal Parts List <a name="Parts"></a>
 
-<center>Check if you get all of the following parts
+<center>Check if you get all of the following parts  
+
 ![](img/getting_started/04-intheboxparts.jpg)</center>  
 <br>
 1. uArm Metal main body  
@@ -242,14 +243,11 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 
 
 ## Community Support <a name="Community"></a>
-<center>
-Welcome to the uArm Community!
+
+<center>Welcome to the uArm Community!</center>
 <br>
-[Customer Service](http://customer.ufactory.cc/)
+<center>[Customer Service](http://customer.ufactory.cc/)</center>
 <br>
-[Official Forum](https://forum.ufactory.cc/)
-</center>
+<center>[Official Forum](https://forum.ufactory.cc/)</center>
 <br>
-<center>
-[Reddit](https://www.reddit.com/r/uArm ) | [Youtube](https://www.youtube.com/channel/UCyy5ekYtq35jFtPpY3O_tVA ) | [Facebook](https://www.facebook.com/Ufactory2013) | [Twitter](https://twitter.com/UFACTORY_UF ) | [Instagram](https://www.instagram.com/ufactoryofficial/)  
-</center>
+<center>[Reddit](https://www.reddit.com/r/uArm ) | [Youtube](https://www.youtube.com/channel/UCyy5ekYtq35jFtPpY3O_tVA ) | [Facebook](https://www.facebook.com/Ufactory2013) | [Twitter](https://twitter.com/UFACTORY_UF ) | [Instagram](https://www.instagram.com/ufactoryofficial/)</center>
