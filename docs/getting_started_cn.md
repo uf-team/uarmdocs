@@ -9,10 +9,10 @@
 1. [安全须知](#Safety)
 2. [配件清单](#Parts)
 3. [安装说明](#Assembly)
-4. [操作说明](#Operation)
-   4.1 [准备就绪](#Preparation)
-   4.2 [安装软件](#Software)
-   4.3 [uClient操作说明](#uClient)
+4. [操作说明](#Operation)  
+   4.1 [准备就绪](#Preparation)  
+   4.2 [安装软件](#Software)  
+   4.3 [uClient操作说明](#uClient)  
 5. [社区支持](#Community)
 
 ## 安全须知 <a name="Safety"></a>
