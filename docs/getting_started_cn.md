@@ -242,4 +242,7 @@ pip install pyuarm
 <br>
 <center>[官方论坛](https://forum.ufactory.cc/)</center>
 <br>
+<center>![](img/getting_started/uArm_wechat.png)  
+扫一扫，关注uArm微信公众号</center>
+<br>
 <center>[微博](http://weibo.com/u/3925641670?topnav=1&wvr=6&topsug=1&is_all=1) | [优酷](http://i.youku.com/i/UMzY4Njk1NTQ2OA==) | [腾讯视频](http://v.qq.com/vplus/6c4792a45937ca8ef893016a79843b0d)
