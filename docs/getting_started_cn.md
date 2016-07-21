@@ -84,7 +84,7 @@
 
 ##### 第 2 步 - 安装驱动
 <br>
-<center>![](img/getting_started/10driver-1.png)</center>
+<center>![](img/getting_started/10driver-1.png)</center>  
 <center>**2.1** - 解压，运行_driver.exe_</center>
 <br>
 <br>
