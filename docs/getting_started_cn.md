@@ -30,14 +30,14 @@
 
 <center>![](img/getting_started/04-intheboxparts.jpg)</center>
 <br>
-1. uArm Metal机身
-2. 电源 x1
-3. 电源线 x1
-4. 气泵 x1 （附2颗安装螺丝）
-5. USB线 x1
-6. 脚部支撑 x 4 (附8颗安装螺丝)
-7. 螺丝刀 x1
-
+1. uArm Metal机身  
+2. 电源 x1  
+3. 电源线 x1  
+4. 气泵 x1 （附2颗安装螺丝）  
+5. USB线 x1  
+6. 脚部支撑 x 4 (附8颗安装螺丝)  
+7. 螺丝刀 x1  
+<br>
 
 ## 安装说明 <a name="Assembly"></a>
 
