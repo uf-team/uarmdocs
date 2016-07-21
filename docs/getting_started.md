@@ -1,22 +1,34 @@
 # uArm Metal Getting Started Guide #
 
 2016.06
-
+<center>
 ![](img/getting_started/01-cover.jpg)
 
+</center>
 
-## Saftey Instructions
+# Table of Content
+1. [Safety Instructions](#Safety)
+2. [uArm Metal Parts List](#Parts)
+3. [Assembly Instructions](#Assembly)
+4. [Operation Instructions](#Operation)  
+   4.1 [Preparation](#Preparation)  
+   4.2 [Software Installation](#Software)
+   4.3 [Control uArm via uClient](#uClient)
+5. [Community Support](#Community)
+
+## Saftey Instructions <a name="Safety"></a>
 
 - Please don’t put your hands in the highlighted area.
-![](img/getting_started/02safety.jpg)
+<center>![](img/getting_started/02safety.jpg)</center>
 
 - When uArm is moving, please ensure that nothing that may get hurt or broken is within uArm’s moving range.
-![](img/getting_started/03working area.jpg)
+<center>![](img/getting_started/03working area.jpg)</center>
 
-## uArm Metal Parts List
 
-<center>Check if you get all of the following parts</center>
-![](img/getting_started/04-intheboxparts.jpg)  
+## uArm Metal Parts List <a name="Parts"></a>
+
+<center>Check if you get all of the following parts
+![](img/getting_started/04-intheboxparts.jpg)</center>  
 <br>
 1. uArm Metal main body  
 2. Power Adapter x1  
@@ -27,7 +39,7 @@
 7. Screw Driver x1  
 
 
-## Assembly Instructions
+## Assembly Instructions <a name="Assembly"></a>
 
 <center>**Step 1** Install the 4 foot brackets</center>
 ![](img/getting_started/05foot bracket.jpg)
@@ -40,8 +52,8 @@
 ![](img/getting_started/07pump-pipe.jpg)
 <center>2.2 Attach the Cable and the Pipe</center>
 
-## Operation Instructions
-### Preparation
+## Operation Instructions <a name="Operation"></a>
+### Preparation <a name="Preparation"></a>
 1. Power On
 ![](img/getting_started/08power on.jpg)
 <center>If the RED light is on, the uArm is powered.</center>
@@ -49,14 +61,14 @@
 2. Connect uArm to computer with USB
 ![](img/getting_started/09USB.jpg)
 
-### Software Installation
+### Software Installation <a name="Software"></a>
 The installation method on Windows, MacOS and Linux are different. Please directly go to the section relevant to you.
 
-[Windows](#win)  
-[MacOS](#mac)  
-[Linux](#linux)
+1. [Windows](#Windows)  
+2. [MacOS](#MacOS)  
+3. [Linux](#Linux)
 
-#### Windows
+#### Windows <a name="Windows"></a>
 
 ##### Step 1 - Download
 
@@ -110,7 +122,8 @@ have one.
 - Press OK , download JRE, and run the exe
 - This download requirement will not pop up again after you finish JRE setup.
 
-#### MacOS
+#### MacOS <a name="MacOS"></a>
+
 ##### Step 1 - Open `terminal.app`  
 <br>
 ![](img/getting_started/macinstall-terminal.png)
@@ -118,12 +131,11 @@ have one.
 
 ##### Step 2 - Enter Command to Start Installation
 
-**2.1 Copy & paste the command below to install uArm Enviroment:**
+**Step 2.1 Copy & paste the command below to install uArm Enviroment:**
 
 `
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
 `
-
 
 <center>
 ![](img/getting_started/mac-01)  
@@ -133,10 +145,10 @@ have one.
 <br>
 <br>
 </center>
-**2.2 When the installation is finished, you will see the words below:**
+**Step 2.2 When the installation is finished, you will see the words below:**
 <center>![](img/getting_started/macinstall04 finish install.png)</center>
 <br>
-**2.3 After installation, you could use commands below:**    
+**Step 2.3 After installation, you could use commands below:**    
 - `uarm-firmware` - upgrade your uArm firmware  
 - `uarm-listport` - show all connected uArm  
 <br>
@@ -150,13 +162,11 @@ Change the privacy setting on your Mac
 <br>
 <br>
 ![  ](img/getting_started/mac-uclient folder.png)  
-Run `uarm_client.exe`
-
+Run `uarm_client.exe` and have fun!
 
 </center>
-
-
-#### <a name="linux"></a>Linux
+<br>
+#### Linux <a name="Linux"></a>
 
 ##### Step 1 Install pip & avrdude
 Before installing the uArm Environment, you need to install:
@@ -181,8 +191,9 @@ Done!
 You could use following commands in your future usage:
 - `uarm-firmware` - upgrade your uArm firmware   
 - `uarm-listport` - show all connected uArm  
+
 <br>
-### Control uArm via uClient
+### Control uArm via uClient <a name="uClient"></a>
 #### Step 1 – Select the right COM and Click *Connect*
 
 ![](img/getting_started/12-uclient4.png)
@@ -228,7 +239,7 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 **4 － You may reset uArm to the default position.**  
 
 
-## Community Support
+## Community Support <a name="Community"></a>
 <center>
 Welcome to the uArm Community!
 <center>
