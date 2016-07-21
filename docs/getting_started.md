@@ -3,7 +3,6 @@
 2016.06
 <center>
 ![](img/getting_started/01-cover.jpg)
-
 </center>
 
 # Table of Content
@@ -27,9 +26,9 @@
 
 ## uArm Metal Parts List <a name="Parts"></a>
 
-<center>Check if you get all of the following parts  
+<center>Check if you get all of the following parts</center>  
 
-![](img/getting_started/04-intheboxparts.jpg)</center>  
+<center>![](img/getting_started/04-intheboxparts.jpg)</center>  
 <br>
 1. uArm Metal main body  
 2. Power Adapter x1  
@@ -43,26 +42,26 @@
 ## Assembly Instructions <a name="Assembly"></a>
 
 <center>**Step 1** Install the 4 foot brackets</center>
-![](img/getting_started/05foot bracket.jpg)
+<center>![](img/getting_started/05foot bracket.jpg)</center>
 <center>Please be aware the screws should be inserted from the bottom to top.</center>
 <br>
 <br>
 <center>**Step 2** Install the Pump</center>
-![](img/getting_started/06screws.jpg)  
+<center>![](img/getting_started/06screws.jpg)</center>  
 <center>2.1 Insert 2 screws to install the pump</center>
 <br>
 <br>
-![](img/getting_started/07pump-pipe.jpg)
+<center>![](img/getting_started/07pump-pipe.jpg)</center>
 <center>2.2 Attach the Cable and the Pipe</center>
 
 ## Operation Instructions <a name="Operation"></a>
 ### Preparation <a name="Preparation"></a>
 1. Power On
-![](img/getting_started/08power on.jpg)
+<center>![](img/getting_started/08power on.jpg)</center>
 <center>If the RED light is on, the uArm is powered.</center>
 <br>
 2. Connect uArm to computer with USB
-![](img/getting_started/09USB.jpg)
+<center>![](img/getting_started/09USB.jpg)</center>
 
 ### Software Installation <a name="Software"></a>
 The installation method on Windows, MacOS and Linux are different. Please directly go to the section relevant to you.
@@ -75,7 +74,7 @@ The installation method on Windows, MacOS and Linux are different. Please direct
 
 ##### Step 1 - Download
 
-Please download the following softwares from the official download page:  
+Please download the following softwares from the [official download page](https://ufactory.cc/en/uarm_metal?tag=download#support):  
 
 - **Driver** - You need to install this driver before you start everything on Windows
 - **uClient** - the software that you operate to control the movement of uArm
@@ -85,23 +84,24 @@ Please download the following softwares from the official download page:
 
 ##### Step 2 - Intall the Driver  
 <br>
-![](img/getting_started/10driver-1.png)
+<center>![](img/getting_started/10driver-1.png)</center>
 <center>**Step 2.1** - unzip the driver file and run _driver.exe_</center>
 <br>
 <br>
-![](img/getting_started/10driver-2.png)
-![](img/getting_started/10driver-3.png)  
+<center>![](img/getting_started/10driver-2.png)</center>
+<center>![](img/getting_started/10driver-3.png)</center>  
 
 <center>**Step 2.2** - Follow the instructions to install the driver.</center>
 
 
 ##### Step 3 – Ensure the firmware is the latest version
 
-![](img/getting_started/11firmware-1.png)
+<center>![](img/getting_started/11firmware-1.png)</center>
 <center>**Step 3.1** – unzip the firmware file and run *firmware_helper_exe*</center>
 <br>
-![](img/getting_started/11firmware-win check.jpg)
+<center>![](img/getting_started/11firmware-win check.jpg)</center>
 <center>**Step 3.2** – Check the firmware & ensure it is the lastest version</center>
+
 - You will get your uArm port No. and whether your firmware is the latest version at this step.  
 - If the firmware is not the latest, enter "Y" to update.  
 - After that, Press Enter to Exit.  
@@ -109,13 +109,11 @@ Please download the following softwares from the official download page:
 
 ##### Step 4 – Prepare JRE for uClient (for first-time users)
 
-![](img/getting_started/12-uclient1.png)
+<center>![](img/getting_started/12-uclient1.png)</center>
 <center>**Step 4.1** – Click on uClient.exe to launch the APP</center>
 
-<center>
-![](img/getting_started/12-uclient2.png)
-![](img/getting_started/12-uclient3.png)
-</center>
+<center>![](img/getting_started/12-uclient2.png)</center>
+<center>![](img/getting_started/12-uclient3.png)</center>
 
 <center>**Step 4.2** – Download JRE (for first-time users)</center>  
 - You will be asked to download JRE (Java Runtime Environment) IF your computer does not
@@ -129,7 +127,7 @@ have one.
 
 ##### Step 1 - Open `terminal.app`  
 <br>
-![](img/getting_started/macinstall-terminal.png)
+<center>![](img/getting_started/macinstall-terminal.png)</center>
 <center>Search `terminal.app` via Spotlight Search</center>
 
 ##### Step 2 - Enter Command to Start Installation
@@ -140,14 +138,12 @@ have one.
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
 `
 
-<center>
-![](img/getting_started/mac-01)  
+<center>![](img/getting_started/mac-01)</center>  
 <br>
-![](img/getting_started/mac03)
-<br>
+<center>![](img/getting_started/mac03)</center>
 <br>
 <br>
-</center>
+<br>
 **Step 2.2 When the installation is finished, you will see the words below:**
 <center>![](img/getting_started/macinstall04 finish install.png)</center>
 <br>
@@ -158,16 +154,16 @@ have one.
 <center>![](img/getting_started/mac04)</center>
 
 ##### Step 3 - Download uClient
-**Please download uClient from our official website.**  <center>
-![  ](img/getting_started/mac-changeprivacy.png)
+**Please download uClient from our official website.**  
+<center>![  ](img/getting_started/mac-changeprivacy.png)</center>
 Change the privacy setting on your Mac  
 (or you are not able to run uClient)
 <br>
 <br>
-![  ](img/getting_started/mac-uclient folder.png)  
-Run `uarm_client.exe` and have fun!
+<center>![  ](img/getting_started/mac-uclient folder.png)  
+Run `uarm_client.exe` and have fun!</center>
 
-</center>
+
 <br>
 #### Linux <a name="Linux"></a>
 
@@ -199,7 +195,7 @@ You could use following commands in your future usage:
 ### Control uArm via uClient <a name="uClient"></a>
 #### Step 1 – Select the right COM and Click *Connect*
 
-![](img/getting_started/12-uclient4.png)
+<center>![](img/getting_started/12-uclient4.png)</center>
 
 - COM No. for uArm may vary.  
 - Click *Rescan* if uClient does not detect the COM for uArm.  
@@ -207,7 +203,7 @@ You could use following commands in your future usage:
 *Connect* again.
 
 #### Step 2 – Familiarize with uClient
-![](img/getting_started/13 uclient 5.png)
+<center>![](img/getting_started/13 uclient 5.png)</center>
 
 
 **1 － Control uArm movement along X, Y, Z Axis.**  
@@ -236,7 +232,7 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 ③ Ensure that you have downloaded Leap Motion APP (for PC)
 
 **Leap Motion is activated when the uClient interface displays the following:**  
-![](img/getting_started/15 leap motion3.png)
+<center>![](img/getting_started/15 leap motion3.png)</center>
 <center>You may change the minimum Z value of Leap Motion Control.</center>
 <br>
 **4 － You may reset uArm to the default position.**  
