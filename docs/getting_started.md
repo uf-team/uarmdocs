@@ -1,22 +1,34 @@
 # uArm Metal Getting Started Guide #
 
 2016.06
-
+<center>
 ![](img/getting_started/01-cover.jpg)
+</center>
 
+# Table of Content
+1. [Safety Instructions](#Safety)
+2. [uArm Metal Parts List](#Parts)
+3. [Assembly Instructions](#Assembly)
+4. [Operation Instructions](#Operation)  
+   4.1 [Preparation](#Preparation)  
+   4.2 [Software Installation](#Software)  
+   4.3 [Control uArm via uClient](#uClient)
+5. [Community Support](#Community)
 
-## Saftey Instructions
+## Saftey Instructions <a name="Safety"></a>
 
 - Please don’t put your hands in the highlighted area.
-![](img/getting_started/02safety.jpg)
+<center>![](img/getting_started/02safety.jpg)</center>
 
 - When uArm is moving, please ensure that nothing that may get hurt or broken is within uArm’s moving range.
-![](img/getting_started/03working area.jpg)
+<center>![](img/getting_started/03working area.jpg)</center>
 
-## uArm Metal Parts List
 
-<center>Check if you get all of the following parts</center>
-![](img/getting_started/04-intheboxparts.jpg)  
+## uArm Metal Parts List <a name="Parts"></a>
+
+<center>Check if you get all of the following parts</center>  
+
+<center>![](img/getting_started/04-intheboxparts.jpg)</center>  
 <br>
 1. uArm Metal main body  
 2. Power Adapter x1  
@@ -25,72 +37,71 @@
 5. USB Cable x1  
 6. Foot brackets x 4(with 8 screws)  
 7. Screw Driver x1  
-<br>
-<br>
-## Assembly Instructions
-<br>
-<br>
+
+
+## Assembly Instructions <a name="Assembly"></a>
+
 <center>**Step 1** Install the 4 foot brackets</center>
-![](img/getting_started/05foot bracket.jpg)
+<center>![](img/getting_started/05foot bracket.jpg)</center>
 <center>Please be aware the screws should be inserted from the bottom to top.</center>
 <br>
+<br>
 <center>**Step 2** Install the Pump</center>
-![](img/getting_started/06screws.jpg)  
+<center>![](img/getting_started/06screws.jpg)</center>  
 <center>2.1 Insert 2 screws to install the pump</center>
 <br>
-![](img/getting_started/07pump-pipe.jpg)
+<br>
+<center>![](img/getting_started/07pump-pipe.jpg)</center>
 <center>2.2 Attach the Cable and the Pipe</center>
 
-## Operation Instructions
-### Preparation
+## Operation Instructions <a name="Operation"></a>
+### Preparation <a name="Preparation"></a>
 1. Power On
-![](img/getting_started/08power on.jpg)
+<center>![](img/getting_started/08power on.jpg)</center>
 <center>If the RED light is on, the uArm is powered.</center>
 <br>
 2. Connect uArm to computer with USB
-![](img/getting_started/09USB.jpg)
+<center>![](img/getting_started/09USB.jpg)</center>
 
-
-### Software Installation
+### Software Installation <a name="Software"></a>
 The installation method on Windows, MacOS and Linux are different. Please directly go to the section relevant to you.
 
-[Windows](#w)  
-[MacOS](#m)  
-[Linux](#linux)
+1. [Windows](#Windows)  
+2. [MacOS](#MacOS)  
+3. [Linux](#Linux)
 
-#### <a name="w"></a>Windows
+#### Windows <a name="Windows"></a>
 
 ##### Step 1 - Download
 
-Please download the following softwares from the official download page:  
+Please download the following softwares from the [official download page](https://ufactory.cc/en/uarm_metal?tag=download#support):  
 
 - **Driver** - You need to install this driver before you start everything on Windows
 - **uClient** - the software that you operate to control the movement of uArm
 - **Firmware Helper** - to enable uArm to recognize the operations you made via uClient
     Upgrade your firmware.
-- **Calibration Tool** (for DEVELOPERS) - Your uArm has been calibrated by default. Please DON'T calibrate uArm by yourself UNTIL
 
-Click on **"Getting Started Pack"** on the download page and you will get all softwares above.
 
 ##### Step 2 - Intall the Driver  
 <br>
-![](img/getting_started/10driver-1.png)
+<center>![](img/getting_started/10driver-1.png)</center>
 <center>**Step 2.1** - unzip the driver file and run _driver.exe_</center>
 <br>
 <br>
-![](img/getting_started/10driver-2.png)
-![](img/getting_started/10driver-3.png)  
+<center>![](img/getting_started/10driver-2.png)</center>
+<center>![](img/getting_started/10driver-3.png)</center>  
 
 <center>**Step 2.2** - Follow the instructions to install the driver.</center>
 
 
 ##### Step 3 – Ensure the firmware is the latest version
 
-![](img/getting_started/11firmware-1.png)
+<center>![](img/getting_started/11firmware-1.png)</center>
 <center>**Step 3.1** – unzip the firmware file and run *firmware_helper_exe*</center>
 <br>
-![](img/getting_started/11firmware-win check.jpg)
+<center>![](img/getting_started/11firmware-win check.jpg)</center>
 <center>**Step 3.2** – Check the firmware & ensure it is the lastest version</center>
+
 - You will get your uArm port No. and whether your firmware is the latest version at this step.  
 - If the firmware is not the latest, enter "Y" to update.  
 - After that, Press Enter to Exit.  
@@ -98,67 +109,63 @@ Click on **"Getting Started Pack"** on the download page and you will get all so
 
 ##### Step 4 – Prepare JRE for uClient (for first-time users)
 
-![](img/getting_started/12-uclient1.png)
+<center>![](img/getting_started/12-uclient1.png)</center>
 <center>**Step 4.1** – Click on uClient.exe to launch the APP</center>
 
-<center>
-![](img/getting_started/12-uclient2.png)
-![](img/getting_started/12-uclient3.png)
-</center>
+<center>![](img/getting_started/12-uclient2.png)</center>
+<center>![](img/getting_started/12-uclient3.png)</center>
 
 <center>**Step 4.2** – Download JRE (for first-time users)</center>  
 - You will be asked to download JRE (Java Runtime Environment) IF your computer does not
 have one.
 - Press OK , download JRE, and run the exe
-- This download requirement will not pop up again after you finish JRE setup.  
+- This download requirement will not pop up again after you finish JRE setup.
 
-#### <a name="m"></a>MacOS  
+<br>
+<br>
+#### MacOS <a name="MacOS"></a>
+
 ##### Step 1 - Open `terminal.app`  
 <br>
-![](img/getting_started/macinstall-terminal.png)
+<center>![](img/getting_started/macinstall-terminal.png)</center>
 <center>Search `terminal.app` via Spotlight Search</center>
 
 ##### Step 2 - Enter Command to Start Installation
 
-**2.1 Copy & paste the command below to install uArm Enviroment:**
+**Step 2.1 Copy & paste the command below to install uArm Enviroment:**
 
 `
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
 `
 
-
-<center>
-![](img/getting_started/mac-01)  
+<center>![](img/getting_started/mac-01)</center>  
 <br>
-![](img/getting_started/mac03)
+<center>![](img/getting_started/mac03)</center>
 <br>
 <br>
 <br>
-</center>
-**2.2 When the installation is finished, you will see the words below:**
+**Step 2.2 When the installation is finished, you will see the words below:**
 <center>![](img/getting_started/macinstall04 finish install.png)</center>
 <br>
-**2.3 After installation, you could use commands below:**    
+**Step 2.3 After installation, you could use commands below:**    
 - `uarm-firmware` - upgrade your uArm firmware  
 - `uarm-listport` - show all connected uArm  
 <br>
 <center>![](img/getting_started/mac04)</center>
 
 ##### Step 3 - Download uClient
-**Please download uClient from our official website.  **  <center>
-![  ](img/getting_started/mac-changeprivacy.png)
+**Please download uClient from our official website.**  
+<center>![  ](img/getting_started/mac-changeprivacy.png)</center>
 Change the privacy setting on your Mac  
 (or you are not able to run uClient)
 <br>
 <br>
-![  ](img/getting_started/mac-uclient folder.png)  
-Run `uarm_client.exe`
+<center>![  ](img/getting_started/mac-uclient folder.png)  
+Run `uarm_client.exe` and have fun!</center>
 
 
-</center>
-
-
-#### <a name="linux"></a>Linux
+<br>
+#### Linux <a name="Linux"></a>
 
 ##### Step 1 Install pip & avrdude
 Before installing the uArm Environment, you need to install:
@@ -183,11 +190,12 @@ Done!
 You could use following commands in your future usage:
 - `uarm-firmware` - upgrade your uArm firmware   
 - `uarm-listport` - show all connected uArm  
+
 <br>
-### Control uArm via uClient
+### Control uArm via uClient <a name="uClient"></a>
 #### Step 1 – Select the right COM and Click *Connect*
 
-![](img/getting_started/12-uclient4.png)
+<center>![](img/getting_started/12-uclient4.png)</center>
 
 - COM No. for uArm may vary.  
 - Click *Rescan* if uClient does not detect the COM for uArm.  
@@ -195,13 +203,13 @@ You could use following commands in your future usage:
 *Connect* again.
 
 #### Step 2 – Familiarize with uClient
-![](img/getting_started/13 uclient 5.png)
+<center>![](img/getting_started/13 uclient 5.png)</center>
 
-**
-1 － Control uArm movement along X, Y, Z Axis.  
+
+**1 － Control uArm movement along X, Y, Z Axis.**  
 <br>
-2 － Control the end-effector (Suction Cup/Gripper/Universal Holder)  
-**  
+**2 － Control the end-effector (Suction Cup/Gripper/Universal Holder)**  
+
 
 ＊ You may rotate the suction cup from 0° to 180° by moving the yellow line. Rotation does not
 apply to Gripper or Universal Holder.  
@@ -224,19 +232,18 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 ③ Ensure that you have downloaded Leap Motion APP (for PC)
 
 **Leap Motion is activated when the uClient interface displays the following:**  
-![](img/getting_started/15 leap motion3.png)
+<center>![](img/getting_started/15 leap motion3.png)</center>
 <center>You may change the minimum Z value of Leap Motion Control.</center>
 <br>
 **4 － You may reset uArm to the default position.**  
 
 
-## Community Support
-<center>
-Welcome to the uArm Community!
-<center>
-[Customer Service](http://customer.ufactory.cc/)
-<center>
-[Official Forum](https://forum.ufactory.cc/)
-</center>
-<br><center>
-[Reddit](https://www.reddit.com/r/uArm ) | [Youtube](https://www.youtube.com/channel/UCyy5ekYtq35jFtPpY3O_tVA ) | [Facebook](https://www.facebook.com/Ufactory2013) | [Twitter](https://twitter.com/UFACTORY_UF ) | [Instagram](https://www.instagram.com/ufactoryofficial/)  
+## Community Support <a name="Community"></a>
+
+<center>Welcome to the uArm Community!</center>
+<br>
+<center>[Customer Service](http://customer.ufactory.cc/)</center>
+<br>
+<center>[Official Forum](https://forum.ufactory.cc/)</center>
+<br>
+<center>[Reddit](https://www.reddit.com/r/uArm ) | [Youtube](https://www.youtube.com/channel/UCyy5ekYtq35jFtPpY3O_tVA ) | [Facebook](https://www.facebook.com/Ufactory2013) | [Twitter](https://twitter.com/UFACTORY_UF ) | [Instagram](https://www.instagram.com/ufactoryofficial/)</center>
