@@ -5,6 +5,10 @@
 ![](img/getting_started/01-cover.jpg)
 </center>
 
+## Notice
+This is a basic guide for uArm beginners.   
+If you want to explore more by programming, please visit the [uArm Metal Developer Guide](https://drive.google.com/open?id=0B-L-tCvknXU9YlIyemVwRldZc1U)
+
 # Table of Content
 1. [Safety Instructions](#Safety)
 2. [uArm Metal Parts List](#Parts)
@@ -237,12 +241,15 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 <br>
 **4 － You may reset uArm to the default position.**  
 
-
 ## Community Support <a name="Community"></a>
 
 <center>Welcome to the uArm Community!</center>
 <br>
+<center>[FAQ]()</center>
+<br>
 <center>[Customer Service](http://customer.ufactory.cc/)</center>
+<br>
+<center>[Developer Guide](https://drive.google.com/open?id=0B-L-tCvknXU9YlIyemVwRldZc1U)</center>
 <br>
 <center>[Official Forum](https://forum.ufactory.cc/)</center>
 <br>

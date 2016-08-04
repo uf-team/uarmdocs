@@ -2,9 +2,9 @@ uArm Documentation Center
 ==================================================
 .. toctree::
 
-   docs/HISTORY
-   docs/README
-   docs/getting_started
-   docs/index
-   docs/instruction
+<<<<<<< HEAD
    docs/instruction_english
+=======
+   docs/HISTORY
+   docs/instruction
+>>>>>>> origin/master
