@@ -1,6 +1,6 @@
 # uArm Metal Getting Started Guide #
 
-2016.06
+2016.06   
 <center>
 ![](img/getting_started/01-cover.jpg)
 </center>
