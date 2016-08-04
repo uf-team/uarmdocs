@@ -238,7 +238,11 @@ pip install pyuarm
 
 <center>欢迎来到uArm社区!</center>
 <br>
+<center>[常见问题]()</center>
+<br>
 <center>[客服通道](http://customer.ufactory.cc/)</center>
+<br>
+<center>[开发者指南](http://pan.baidu.com/s/1misAu2s)</center>
 <br>
 <center>[官方论坛](https://forum.ufactory.cc/)</center>
 <br>
