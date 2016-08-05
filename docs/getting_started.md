@@ -144,7 +144,7 @@ have one.
 
 <center>![](img/getting_started/mac-01)</center>  
 <br>
-<center>![](img/getting_started/mac03)</center>
+<center>![](img/getting_started/mac03.jpeg)</center>
 <br>
 <br>
 <br>
