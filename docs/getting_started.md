@@ -248,7 +248,7 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 
 <center>Welcome to the uArm Community!</center>
 <br>
-<center>[FAQ]()</center>
+<center>[FAQ](https://drive.google.com/open?id=0B-L-tCvknXU9WGJUUjhGbEJ6ZGc)</center>
 <br>
 <center>[Customer Service](http://customer.ufactory.cc/)</center>
 <br>

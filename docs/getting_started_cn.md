@@ -5,6 +5,10 @@
 ![](img/getting_started/01-cover.jpg)
 </center>
 
+### 注：
+该文档是面向uArm新用户的入门指南。  
+若您是开发者，请移步[开发者指南](http://pan.baidu.com/s/1dEOwDo9)。
+
 # 目录
 1. [安全须知](#Safety)
 2. [配件清单](#Parts)
@@ -138,10 +142,13 @@
 `
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
 `
+<br>
+
+**注：**如果您是首次安装，系统可能会提醒安装**Xcode**，根据窗口提示完成安装即可。
 
 <center>![](img/getting_started/mac-01)</center>
 <br>
-<center>![](img/getting_started/mac03)</center>
+<center>![](/images/2016/08/mac03.jpeg)</center>
 <br>
 <br>
 <br>
@@ -238,7 +245,7 @@ pip install pyuarm
 
 <center>欢迎来到uArm社区!</center>
 <br>
-<center>[常见问题]()</center>
+<center>[常见问题](http://pan.baidu.com/s/1pLOs3xh)</center>
 <br>
 <center>[客服通道](http://customer.ufactory.cc/)</center>
 <br>
