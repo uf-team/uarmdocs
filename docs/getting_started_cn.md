@@ -148,7 +148,7 @@
 
 <center>![](img/getting_started/mac-01)</center>
 <br>
-<center>![](/images/2016/08/mac03.jpeg)</center>
+<center>![](img/getting_started/mac03.jpeg)</center>
 <br>
 <br>
 <br>
