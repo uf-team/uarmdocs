@@ -247,9 +247,9 @@ pip install pyuarm
 <br>
 <center>[常见问题](http://pan.baidu.com/s/1pLOs3xh)</center>
 <br>
-<center>[客服通道](http://customer.ufactory.cc/)</center>
+<center>[客服通道](http://form.mikecrm.com/K7pQsf)</center>
 <br>
-<center>[开发者指南](http://pan.baidu.com/s/1misAu2s)</center>
+<center>[开发者指南](http://pan.baidu.com/s/1dEOwDo9)</center>
 <br>
 <center>[官方论坛](https://forum.ufactory.cc/)</center>
 <br>
