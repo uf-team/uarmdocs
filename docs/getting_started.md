@@ -142,6 +142,9 @@ have one.
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
 `
 
+**Notice:**  
+If you are installing for the first time, you may be asked to install **Xcode**. Please follow the instruction to install.
+
 <center>![](img/getting_started/mac-01)</center>  
 <br>
 <center>![](img/getting_started/mac03.jpeg)</center>
