@@ -2,4 +2,4 @@ site_name: uArm Docs
 pages:
     - Home: index.md
     - Getting Started: getting_started.md
-theme: flatly
+theme_dir: uf_flaty
