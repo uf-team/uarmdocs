@@ -5,6 +5,10 @@
 ![](img/getting_started/01-cover.jpg)
 </center>
 
+## Notice
+This is a basic guide for uArm beginners.   
+If you want to explore more by programming, please visit the [uArm Metal Developer Guide](https://drive.google.com/open?id=0B-L-tCvknXU9YlIyemVwRldZc1U)
+
 # Table of Content
 1. [Safety Instructions](#Safety)
 2. [uArm Metal Parts List](#Parts)
@@ -138,9 +142,12 @@ have one.
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
 `
 
+**Notice:**  
+If you are installing for the first time, you may be asked to install **Xcode**. Please follow the instruction to install.
+
 <center>![](img/getting_started/mac-01)</center>  
 <br>
-<center>![](img/getting_started/mac03)</center>
+<center>![](img/getting_started/mac03.jpeg)</center>
 <br>
 <br>
 <br>
@@ -237,12 +244,15 @@ IF you have a Leap Motion Controller, you may control uArm in this way.
 <br>
 **4 － You may reset uArm to the default position.**  
 
-
 ## Community Support <a name="Community"></a>
 
 <center>Welcome to the uArm Community!</center>
 <br>
+<center>[FAQ]()</center>
+<br>
 <center>[Customer Service](http://customer.ufactory.cc/)</center>
+<br>
+<center>[Developer Guide](https://drive.google.com/open?id=0B-L-tCvknXU9YlIyemVwRldZc1U)</center>
 <br>
 <center>[Official Forum](https://forum.ufactory.cc/)</center>
 <br>
