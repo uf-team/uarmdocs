@@ -1,0 +1,4 @@
+site_name: uArm Docs
+pages:
+    - Home: index.md
+    - Getting Started: getting_started.md

@@ -25,7 +25,7 @@ If you want to explore more by programming, please visit the [uArm Metal Develop
 <center>![](img/getting_started/02safety.jpg)</center>
 
 - When uArm is moving, please ensure that nothing that may get hurt or broken is within uArm’s moving range.
-<center>![](img/getting_started/03working area.jpg)</center>
+<center>![](img/getting_started/03working.jpg)</center>
 
 
 ## uArm Metal Parts List <a name="Parts"></a>
@@ -46,7 +46,7 @@ If you want to explore more by programming, please visit the [uArm Metal Develop
 ## Assembly Instructions <a name="Assembly"></a>
 
 <center>**Step 1** Install the 4 foot brackets</center>
-<center>![](img/getting_started/05foot bracket.jpg)</center>
+<center>![](img/getting_started/05foot.jpg)</center>
 <center>Please be aware the screws should be inserted from the bottom to top.</center>
 <br>
 <br>
@@ -61,7 +61,7 @@ If you want to explore more by programming, please visit the [uArm Metal Develop
 ## Operation Instructions <a name="Operation"></a>
 ### Preparation <a name="Preparation"></a>
 1. Power On
-<center>![](img/getting_started/08power on.jpg)</center>
+<center>![](img/getting_started/08power.jpg)</center>
 <center>If the RED light is on, the uArm is powered.</center>
 <br>
 2. Connect uArm to computer with USB
@@ -103,7 +103,7 @@ Please download the following softwares from the [official download page](https:
 <center>![](img/getting_started/11firmware-1.png)</center>
 <center>**Step 3.1** – unzip the firmware file and run *firmware_helper_exe*</center>
 <br>
-<center>![](img/getting_started/11firmware-win check.jpg)</center>
+<center>![](img/getting_started/11firmware-win-check.jpg)</center>
 <center>**Step 3.2** – Check the firmware & ensure it is the lastest version</center>
 
 - You will get your uArm port No. and whether your firmware is the latest version at this step.  
@@ -145,20 +145,20 @@ have one.
 **Notice:**  
 If you are installing for the first time, you may be asked to install **Xcode**. Please follow the instruction to install.
 
-<center>![](img/getting_started/mac-01)</center>  
+<center>![](img/getting_started/mac-01.jpg)</center>  
 <br>
 <center>![](img/getting_started/mac03.jpeg)</center>
 <br>
 <br>
 <br>
 **Step 2.2 When the installation is finished, you will see the words below:**
-<center>![](img/getting_started/macinstall04 finish install.png)</center>
+<center>![](img/getting_started/macinstall04_finish_install.png)</center>
 <br>
 **Step 2.3 After installation, you could use commands below:**    
 - `uarm-firmware` - upgrade your uArm firmware  
 - `uarm-listport` - show all connected uArm  
 <br>
-<center>![](img/getting_started/mac04)</center>
+<center>![](img/getting_started/mac04.jpg)</center>
 
 ##### Step 3 - Download uClient
 **Please download uClient from our official website.**  
@@ -167,7 +167,7 @@ Change the privacy setting on your Mac
 (or you are not able to run uClient)
 <br>
 <br>
-<center>![  ](img/getting_started/mac-uclient folder.png)  
+<center>![  ](img/getting_started/mac-uclient_folder.png)  
 Run `uarm_client.exe` and have fun!</center>
 
 
@@ -210,7 +210,7 @@ You could use following commands in your future usage:
 *Connect* again.
 
 #### Step 2 – Familiarize with uClient
-<center>![](img/getting_started/13 uclient 5.png)</center>
+<center>![](img/getting_started/13-uclient5.png)</center>
 
 
 **1 － Control uArm movement along X, Y, Z Axis.**  
@@ -227,19 +227,19 @@ apply to Gripper or Universal Holder.
 **3 － Leap Motion Control (alternative to mouse control)**  
 
 IF you have a Leap Motion Controller, you may control uArm in this way.
-<center>![](img/getting_started/15leap motion4.png)</center>
+<center>![](img/getting_started/15_leap_motion4.png)</center>
 <br>
 **To enable Leap Motion Control, please:**  
 
 ① Connect Leap Motion Controller to PC, and tick the box in uClient  
 
 ② Place the Leap Motion Controller in a way that you are facing the flashing GREEN light
-<center>![](img/getting_started/15 leap motion2.jpg)</center>
+<center>![](img/getting_started/15_leap_motion2.jpg)</center>
 <br>
 ③ Ensure that you have downloaded Leap Motion APP (for PC)
 
 **Leap Motion is activated when the uClient interface displays the following:**  
-<center>![](img/getting_started/15 leap motion3.png)</center>
+<center>![](img/getting_started/15_leap_motion3.png)</center>
 <center>You may change the minimum Z value of Leap Motion Control.</center>
 <br>
 **4 － You may reset uArm to the default position.**  
