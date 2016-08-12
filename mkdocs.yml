@@ -3,5 +3,5 @@ pages:
     - Home: index.md
     - Getting Started: getting_started.md
     - Tools:
-        - 'Windows tools Installation guide': tools_windows.md
+        - 'Windows tools Installation guide': windows_tools.md
 theme: flatly
