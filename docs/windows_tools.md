@@ -13,7 +13,7 @@ This guide would help you install all the environment uArm Tools need in windows
 - input this online script `iex ((New-Object System.Net.WebClient).DownloadString('http://download.ufactory.cc/tools/windows/install.ps1'))`
 
 if your network quality doesn't well, it supports proxy.
-please run this command before you execute the online script: `$env:chocolateyProxyLocation = 'http://192.168.31.152:8016'`
+please run this command before you execute the online script: `$env:chocolateyProxyLocation = 'http://address:port'`
 
 what is the script actually did?
 - chocolatey, Software Management. Automated. [https://chocolatey.org/][db374d94]
