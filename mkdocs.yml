@@ -2,6 +2,5 @@ site_name: uArm Docs
 pages:
     - Home: index.md
     - Getting Started: getting_started.md
-    - Tools:
-        - 'Windows tools Installation guide': tools_installation.md
+    - Tools Installation: tools_installation.md
 theme: flatly
