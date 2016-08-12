@@ -22,3 +22,12 @@ what is the script actually did?
 - pyuarm, uArm python library include all python environment
 
   [db374d94]: https://chocolatey.org/ "https://chocolatey.org/"
+
+
+## Tools usage
+
+Now you could use below command in terminal
+
+- uarm-firmware
+- uarm-calibrate
+- uarm-listport
