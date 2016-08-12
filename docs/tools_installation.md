@@ -34,7 +34,7 @@ Now you could use below command in terminal
 - `uarm-listport` - show all connected uArm  
 - `uarm-calibrate` - calibrate uArm
 
-#### MacOS <a name="MacOS"></a>
+## MacOS
 
 ##### Step 1 - Open `terminal.app`  
 <br>

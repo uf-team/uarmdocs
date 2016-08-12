@@ -2,5 +2,8 @@ site_name: uArm Docs
 pages:
     - Home: index.md
     - Getting Started: getting_started.md
-    - Tools Installation: tools_installation.md
+    - uArm CLI: 
+        - 'Installation' : tools_installation.md
+        - 'User Guide' : cli_guide.md
+    - Calibration Guide: calibration.md
 theme: flatly
