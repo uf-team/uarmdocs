@@ -1,4 +1,4 @@
-# uArm tools installation
+# uArm CommandLine installation
 
 ## Windows
 
@@ -10,10 +10,16 @@ This guide would help you install all the environment uArm Tools need in windows
 - Administrator privilege
 
 ### Online installation script
-- Open Powershell
-- Please input the command to change the Powershell executionpolicy `Set-ExecutionPolicy unrestricted`, Press "Y" to approve
+- Open Powershell with Administrator  
+<center>![Run Powershell](img/cli/powershell-01.png)</center>
+<center>Run as administrator</center>  
+- Please input the command to change the Powershell executionpolicy `Set-ExecutionPolicy unrestricted`, Press "A" to approve  
+
+Powershell script execution policy default is restrict, it means that doesn't allow any script running. please refer [Get-ExecutionPolicy](https://go.microsoft.com/fwlink/?LinkID=135170)  
+![Set-ExecutionPolicy unrestricted](img/cli/powershell-02.png)
 - input this online script `iex ((New-Object System.Net.WebClient).DownloadString('http://download.ufactory.cc/tools/windows/install.ps1'))`
 
+** Install with Proxy **  
 if your network quality doesn't well, it supports proxy.
 please run this command before you execute the online script: `$env:chocolateyProxyLocation = 'http://address:port'`
 
@@ -32,38 +38,42 @@ Now you could use below command in terminal
 
 - `uarm-firmware` - upgrade your uArm firmware  
 - `uarm-listport` - show all connected uArm  
-- `uarm-calibrate` - calibrate uArm
+- `uarm-calibrate` - calibrate uArm  
+- `uarm-cli` - Console
 
 ## MacOS
 
 ##### Step 1 - Open `terminal.app`  
-<br>
-<center>![](img/getting_started/macinstall-terminal.png)</center>
+
+![macinstall-terminal](img/getting_started/macinstall-terminal.png)
 <center>Search `terminal.app` via Spotlight Search</center>
 
 ##### Step 2 - Enter Command to Start Installation
 
 **Step 2.1 Copy & paste the command below to install uArm Enviroment:**
 
-`
+```
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
-`
-
-**Notice:**  
-If you are installing for the first time, you may be asked to install **Xcode**. Please follow the instruction to install.
-
-<center>![](img/getting_started/mac-01.jpg)</center>  
+```
 <br>
-<center>![](img/getting_started/mac03.jpeg)</center>
+![macinstall-01](img/cli/macinstall-01.png)
+<br>
+- Press `Enter` in below message: _Press RETURN to continue or any other key to abort_
+<br>
+<br>
+![input password](img/cli/macinstall-02.png)
+<br>
+- Input your Mac user password
 <br>
 <br>
 <br>
 **Step 2.2 When the installation is finished, you will see the words below:**
-<center>![](img/getting_started/macinstall04_finish_install.png)</center>
+![Finisned Image](img/cli/cli-installed-finished.png)
+<br>
 <br>
 **Step 2.3 After installation, you could use commands below:**    
-- `uarm-firmware` - upgrade your uArm firmware  
 - `uarm-listport` - show all connected uArm  
+- `uarm-firmware` - upgrade your uArm firmware  
 - `uarm-calibrate` - calibrate uArm
+- `uarm-cli` - uArm Miniterm
 <br>
-<center>![](img/getting_started/mac04.jpg)</center>

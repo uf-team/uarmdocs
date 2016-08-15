@@ -3,7 +3,6 @@ pages:
     - Home: index.md
     - Getting Started: getting_started.md
     - uArm CLI: 
-        - 'Installation' : tools_installation.md
+        - 'Installation' : cli_installation.md
         - 'User Guide' : cli_guide.md
-    - Calibration Guide: calibration.md
 theme: flatly
