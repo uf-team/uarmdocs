@@ -203,7 +203,7 @@ Please move uArm to correct position, When complete, please press Enter to conti
 servo offset, bottom: 1.12, left: -0.49, right: -11.86, hand: 1.35,
 Confirm Please Press Y, Retry press Other Key:
 ```
-- After you press Y and Enter, will save the offset value into uArm.
+- 当你输入Y确认以后，程序会把校正的数值保存在 uArm 储存空间里面。
 ```
 Confirm Please Press Y, Retry press Other Key: y
     2.1 Saving Servo Offset into EEPROM
