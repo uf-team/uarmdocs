@@ -100,19 +100,19 @@ Make sure you have upgraded your firmware to latest version, you could use `uarm
 
 #### Working Area
 <center>![Don't stick uArm to Desktop](img/cli/calibrate-wrong.png)</center>
-<center>pic4. Don't stick uArm to Desktop</center>
+<center>pic1. Don't stick uArm to Desktop</center>
 
 <center>![Correct type in Desktop](img/cli/calibrate-right.jpg)</center>
-<center>pic5. Correct Way in Desktop</center>
+<center>pic2. Correct Way in Desktop</center>
 
 
 **Please make sure you have a clear Desktop. Below is calibration working area.**
 
 <center> ![calibration area](img/cli/uarm-calibration-area.png) </center>
-<center>pic6. Calibration Area Height</center>
+<center>pic3. Calibration Area Height</center>
 
 <center> ![calibration area](img/cli/uarm-calibration-top-area.jpg) </center>
-<center>pic7. Calibration Top Area</center>
+<center>pic4. Calibration Top Area</center>
 
 ### Start Calibration
 
@@ -180,16 +180,16 @@ Please move uArm to correct position, When complete, please press Enter to conti
     - Servo 2: 20 degree  
 
 <center>![correct position](img/cli/calibration_position1.gif)</center>
-<center>pic8. move uArm to the correct position, Front view</center>
+<center>pic5. move uArm to the correct position, Front view</center>
 
 <center>![correct position](img/cli/calibration_position2.gif)</center>
-<center>pic9. move uArm to the correct position, Back view</center>
+<center>pic6. move uArm to the correct position, Back view</center>
 
 <center>![position stpe1 ](img/cli/calibration_pos_step1.png)</center>
-<center>pic10. Step1 move to 45 degrees</center>
+<center>pic7. Step1 move to 45 degrees</center>
 
 <center>![position stpe2 ](img/cli/calibration_pos_step2.png)</center>
-<center>pic10. Step2 Push the arrow position</center>
+<center>pic8. Step2 Push the arrow position</center>
 
 - Press Enter to continue, Then it would display the each servo calibration offset value, like below
 ```
