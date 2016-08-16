@@ -1,18 +1,18 @@
-# uArm CommandLine User Guide
+# uArm 命令行工具使用教程
 
-** Notice **
-Please make sure you install the uArm cli before. please refer [uArm CLI](cli_installation.md)
+** 注意 **
+在使用这些命令行工具之前，请安装 [uArm CLI](cli_installation.md)
 
-# How to run cli?
+# 如何安装?
 
 ## Windows
 
 
 ## uarm-listport
 
-list all connected uArm ports.
+显示所有已连接的 uArm 接口
 
-eg.
+例如：
 ```
     $ uarm-listport
     /dev/cu.usbserial-AI04I17F
@@ -23,9 +23,9 @@ eg.
 
 ## uarm-firmware
 
-firmware helper could help you upgrade your uArm Firmware to latest version.
+uarm-firmware 可以帮助你升级你的 uArm 固件
 
-You could use `uarm-firmware -h` to list all the usage:
+你可以使用 `uarm-firmware -h` 列出所有的指令帮助：
 
 ```
 usage: uarm-firmware [-h] [-d] [-f [FORCE]] [-c [CHECK]] [-p [PORT]] [-u]
@@ -48,11 +48,13 @@ optional arguments:
 
 - uarm-firmware -d
 
-    This will download the latest firmware from [http://download.ufactory.cc/firmware.hex](http://download.ufactory.cc/firmware.hex)
+    自动下载最新的固件，你也可以根据以下地址自己下载  
+     [http://download.ufactory.cc/firmware.hex](http://download.ufactory.cc/firmware.hex)
 
-    And you could find the latest version number here [http://download.ufactory.cc/version](http://download.ufactory.cc/version)
+    你可以使用以地址获取最新的版本号  
+     [http://download.ufactory.cc/version](http://download.ufactory.cc/version)
 
-    eg.
+例如：
 ```
     uarm-firmware -d
     [1] - /dev/cu.usbserial-A6031WSQ
@@ -64,62 +66,66 @@ optional arguments:
 
 - uarm-firmware -f
 
-    `-f` argument will force to flash the hex file to uArm with the port.  
-    format: -f firmware_path
-    if no firmware path provided, default use `firmware.hex`
+    默认情况下，如果你机械臂的固件版本是最新的，程序并不会更新你的固件，这个时候你可以使用 `-f` 或者 `--force` 参数  
+    格式: -f 固件的路径  
+    如果没有提供固件的路径，会使用默认 `firmware.hex`  
 
-    ```
-    uarm-firmware -f
-    ```
+    例如：
+        ```
+        uarm-firmware -f
+        ```  
+
 - uarm-firmware -u
 
-    `-u or --upgrade` argument, will compare local uarm firmware with remote latest firmware version, if update version is available,
-    you could upgrade the version
+在你使用`-u` 或 `--upgrade` 参数时, 程序会对比当前 uArm 的版本和远程的最新版本, 如果有可更新的最新版本，会自动更新到这个版本  
 
 - uarm-firmware -p
 
-    `-p` or `--port`, specify the port number. You could use `uarm-listport` to list the uarm ports first.
-    eg.
-    `uarm-firmware -p /dev/cu.usbserial-AI04I17F`
-    you could combine with other
-    `uarm-firmware -u -p /dev/cu.usbserial-AI04I17F`
+    如果只有一个 uArm 连接的情况下，程序会自动定位到这个端口，多个端口的时候需要你进行选择。  
+    如果你需要自己指定端口，你可以使用 `-p` 或`--port` 参数, 如果你不知道端口号你可以先使用 `uarm-listport` 先列出有哪些可用的端口。  
+
+    例子：
+        `uarm-firmware -p /dev/cu.usbserial-AI04I17F`  
+        你可以用别的参数绑定使用   
+        `uarm-firmware -u -p /dev/cu.usbserial-AI04I17F`  
 
 ## uarm-calibrate
 
-   **If you bought the uArm Metal after April 2016, please DON’T calibrate it, because all uArm were already calibrated before sale. It might break uArm Metal with frequent calibration.**
+   **注意：如果你是2016年4月26号之后购买的 uArm，不需要进行校正，因为在出厂的时候，我们已经做过了校正，多次校正可能对 uArm 的精度造成影响**
 
-   If you still need to calibrate your uArm. Please read this instruction carefully.
+   如果你是4月26号之前购买的，或者你仍然需要校正的，请认真的阅读以下的教程，使用不当，可能会对 uArm 造成损坏
 
-### Preparation  
+### 准备工作  
 
-   **Notice: While calibrating, uArm will turn and stretch itself to reach the correct positions (refer to PIC1). Some positions are located under the desk, so please make sure it is free from any object may be interrupt calibration process.**
+#### 确保固件已经更新到最新版本
 
-#### Upgrade firmware to latest version
+确保你的固件已经更新到最新的版本，你可以使用以下指令检查 `uarm-firmware -c remote`
 
-Make sure you have upgraded your firmware to latest version, you could use `uarm-firmware -c remote`
+#### 活动范围
 
-#### Working Area
+  **注意: 当开始校正的时候，uArm 会自动的走向某些位置，有先位置可能是在桌子下的，所以请确保 uArm 的活动在一个安全范围内**
+
 <center>![Don't stick uArm to Desktop](img/cli/calibrate-wrong.png)</center>
-<center>pic1. Don't stick uArm to Desktop</center>
+<center>pic1. 错误的固定方式</center>
 
 <center>![Correct type in Desktop](img/cli/calibrate-right.jpg)</center>
-<center>pic2. Correct Way in Desktop</center>
+<center>pic2. 正确的固定方式</center>
 
 
-**Please make sure you have a clear Desktop. Below is calibration working area.**
+**进行校正时，uArm 的运动范围如下：**
 
 <center> ![calibration area](img/cli/uarm-calibration-area.png) </center>
-<center>pic3. Calibration Area Height</center>
+<center>pic3. 活动范围 侧视</center>
 
 <center> ![calibration area](img/cli/uarm-calibration-top-area.jpg) </center>
-<center>pic4. Calibration Top Area</center>
+<center>pic4.活动范围 俯视</center>
 
-### Start Calibration
+### 开始校正
 
-Now we can startup calibration.
+准备工具做好后，我们可以开始校正
 
-- Open terminal, input `uarm-calibrate`
-- If your uArm has been calibrated, it will display the below message, If you still want to calibrate your uArm, Please press "Y" to continue  
+- 打开终端, 输入 `uarm-calibrate` 并回车
+- 程序会自动检测你的校正状态，如果 uArm 已经校正过了，它会再一次提醒你是否需要校正， 如果是请输入『Y』继续：
 ```
     uarm-calibrate
     [1] - /dev/cu.usbserial-AI04I17F
@@ -130,7 +136,7 @@ Now we can startup calibration.
     uArm has been calibrated already, Are you sure want to Calibrate it again?
     Press Y if you want to calibrate anyway...
 ```
-- When Calibration start, uArm will start to calibrate itself for each servo. (We call this Linear Calibration)
+- 当校正开始以后，uArm 会自动的对每一个电机进行校正，这个过程我们称之为**线性度校正**
 ```
 Press Y if you want to calibrate anyway...
 Y
@@ -153,7 +159,7 @@ Servo Number: 3, Angle: 20, Analog: 125
 Servo Number: 3, Angle: 21, Analog: 123
 ...
 ```
--  When Linear Calibration is finished, you will hear "beep beep beep" from uArm, And the console log like below.
+-  当线性度校正完成后，你会听到 uArm 发出 "beep beep beep" 的声音，并且在控制台中会打印以下信息：
 
 ```
 Servo Number: 3, Angle: 159, Analog: 418
@@ -173,25 +179,25 @@ Please move uArm in right position
 Please move uArm to correct position, When complete, please press Enter to contine.
 ```
 
-- Then Move uArm to the correct position.
+- 这个时候，你需要移动 uArm 到一个具体位置，进行**手动校正**
 
-    - Servo 0: 45 degree  
-    - Servo 1: 130 degree  
-    - Servo 2: 20 degree  
+    - 电机 0: 45 度  
+    - 电机 1: 130 度  
+    - 电机 2: 20 度  
 
 <center>![correct position](img/cli/calibration_position1.gif)</center>
-<center>pic5. move uArm to the correct position, Front view</center>
+<center>pic5. 移动 uArm 到指定位置，正面图</center>
 
 <center>![correct position](img/cli/calibration_position2.gif)</center>
-<center>pic6. move uArm to the correct position, Back view</center>
+<center>pic6. 移动 uArm 到指定位置，背面图</center>
 
 <center>![position stpe1 ](img/cli/calibration_pos_step1.png)</center>
-<center>pic7. Step1 move to 45 degrees</center>
+<center>pic7. 步骤1 移动电机0到45度位置</center>
 
 <center>![position stpe2 ](img/cli/calibration_pos_step2.png)</center>
-<center>pic8. Step2 Push the arrow position</center>
+<center>pic8. 步骤2 根据箭头指示对 uArm 施加力</center>
 
-- Press Enter to continue, Then it would display the each servo calibration offset value, like below
+- 完成移动后，请回到控制台下，输入回车，它会打印当前的电机误差值（这个值的大小不会影响 uArm 的性能，只是会减少有效活动范围）  
 ```
 Please move uArm to correct position, When complete, please press Enter to contine.
 servo offset, bottom: 1.12, left: -0.49, right: -11.86, hand: 1.35,
@@ -207,4 +213,4 @@ Confirm Please Press Y, Retry press Other Key: y
     3.2 Mark Completed Flag in EEPROM
 Calibration DONE!!
 ```
-- Congratulations! Calibration completed!
+- 到此所有的步骤都完成了，恭喜！

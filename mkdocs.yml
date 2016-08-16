@@ -1,8 +1,8 @@
-site_name: uArm Docs
+site_name: uArm 文档中心
 pages:
-    - Home: index.md
-    - Getting Started: getting_started.md
-    - uArm CLI: 
-        - 'Installation' : cli_installation.md
-        - 'User Guide' : cli_guide.md
+    - 主页: index.md
+    - 快速开始: getting_started.md
+    - uArm cli 工具:
+        - 'cli工具安装' : cli_installation.md
+        - 'cli工具使用教程' : cli_guide.md
 theme: flatly
