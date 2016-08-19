@@ -1,4 +1,3 @@
-# uArm CommandLine installation
 
 ## Windows
 

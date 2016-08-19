@@ -1,4 +1,3 @@
-# uArm CommandLine User Guide
 
 ** Notice **
 Please make sure you install the uArm cli before. please refer [uArm CLI](cli_installation.md)
