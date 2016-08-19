@@ -2,7 +2,7 @@ site_name: uArm Docs
 pages:
     - Home: index.md
     - Getting Started: getting_started.md
-    - uArm CLI: 
-        - 'Installation' : cli_installation.md
-        - 'User Guide' : cli_guide.md
+    - uArm CommandLine Tools:   uarm_cli.md
 theme: flatly
+markdown_extensions:
+    - markdown_include.include
