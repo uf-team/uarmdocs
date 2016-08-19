@@ -21,7 +21,7 @@
 <center>![](img/getting_started/02safety.jpg)</center>
 
 - 操作uArm前，请清理uArm周围环境，给uArm留出足够的活动空间（活动范围入下图），以免uArm在活动过程中毁坏物品或撞到操作者/旁观者。
-<center>![](img/getting_started/03working area.jpg)</center>
+<center>![](img/getting_started/03working.jpg)</center>
 
 
 ## 配件清单 <a name="Parts"></a>
@@ -42,7 +42,7 @@
 ## 安装说明 <a name="Assembly"></a>
 
 <center>**第 1 步** 安装脚部支撑</center>
-<center>![](img/getting_started/05foot bracket.jpg)</center>
+<center>![](img/getting_started/05foot.jpg)</center>
 <center>请自下而上安装螺丝</center>
 <br>
 <br>
@@ -57,7 +57,7 @@
 ## 操作说明 <a name="Operation"></a>
 ### 准备工作 <a name="Preparation"></a>
 1. 接通电源
-<center>![](img/getting_started/08power on.jpg)</center>
+<center>![](img/getting_started/08power.jpg)</center>
 <center>红灯亮起即已接通电源</center>
 <br>
 <br>
@@ -99,7 +99,7 @@
 <center>![](img/getting_started/11firmware-1.png)</center>  
 <center>**3.1** – 解压，运行*firmware_helper_exe*</center>
 <br>
-<center>![](img/getting_started/11firmware-win check.jpg)</center>  
+<center>![](img/getting_started/11firmware-win-check.jpg)</center>  
 <center>**3.2** – 检查固件，确保已是最新版本</center>
 （固件会不定时更新，最新版本号以您看到的弹窗实际所示为准）
 - 窗口将自动显示：1) uArm 端口号；2）现有固件版本，以及最新固件版本
@@ -139,21 +139,21 @@
     bash -c "$(curl -fsSL http://download.ufactory.cc/tools/macosx/install.sh)"
 `
 
-<center>![](img/getting_started/mac-01)</center>
+<center>![](img/getting_started/mac-01.jpg)</center>
 <br>
-<center>![](img/getting_started/mac03)</center>
+<center>![](img/getting_started/mac03.jpeg)</center>
 <br>
 <br>
 <br>
 **Step 2.2 安装完成后，您会看到以下页面:**
-<center>![](img/getting_started/macinstall04 finish install.png)</center>
+<center>![](img/getting_started/macinstall04_finish_install.png)</center>
 <br>
 **Step 2.3 安装完成后，您可随时使用以下命令:**
 - `uarm-firmware` - 检查、更新uArm固件
 - `uarm-listport` - 列出所有已连接的uArm
 <br>
 <br>
-<center>![](img/getting_started/mac04)</center>
+<center>![](img/getting_started/mac04.jpg)</center>
 
 ##### 第 3 步 - 下载uClient客户端
 **请在[下载中心](https://ufactory.cc/en/uarm_metal?tag=download#support)下载uClient**
@@ -161,7 +161,7 @@
 <center>请先暂时更改您Macbook上的安全设置 (否则将无法运行uClient)</center>
 <br>
 <br>
-<center>![  ](img/getting_started/mac-uclient folder.png)
+<center>![  ](img/getting_started/mac-uclient_folder.png)
 双击运行 `uarm_client.exe`，玩得开心！</center>
 
 
@@ -200,7 +200,7 @@ pip install pyuarm
 <br>
 
 #### 第 2 步 – 用uClient控制uArm
-<center>![](img/getting_started/13 uclient 5.png)</center>
+<center>![](img/getting_started/13-uclient5.png)</center>
 
 
 **1 － 控制uArm在 X, Y, Z轴上的运动**
@@ -215,19 +215,19 @@ pip install pyuarm
 **3 － 通过第三方体感控制器－Leap Motion控制 (除鼠标控制外的另一种控制方式)**
 
 如果您有Leap Motion控制器，您可用体感控制 uArm。
-<center>![](img/getting_started/15leap motion4.png)</center>
+<center>![](img/getting_started/15_leap_motion4.png)</center>
 <br>
 **使用 Leap Motion 控制 uArm 前请确保：**
 
 ① Leap Motion控制器已连接到电脑，且您已在uClient勾选对应方框。
 
 ② 将Leap Motion控制器按图示位置摆放（您须面向绿灯）。
-<center>![](img/getting_started/15 leap motion2.jpg)</center>
+<center>![](img/getting_started/15_leap_motion2.jpg)</center>
 <br>
 ③ 您已下载Leap Motion电脑端APP。（关于Leap Motion的更多信息请参考LM官网）
 
 **当 uClient 界面如下图所示，您就可以开始用体感控制 uArm 了！**
-<center>![](img/getting_started/15 leap motion3.png)</center>
+<center>![](img/getting_started/15_leap_motion3.png)</center>
 <center>您可拖动Minimum Z数值条改变uArm在 Leap Motion控制中的Z轴最低点</center>
 <br>
 <br>
