@@ -10,6 +10,7 @@ uArm cli 提供了命令行的操作方式。
 
 ## uArm 命令行工具安装指南
 
-{!docs/cli_installation!}
+{!docs/cli_installation.md!}
 
 ## uArm 命令行工具使用指南
+{!docs/cli_guide.md!}

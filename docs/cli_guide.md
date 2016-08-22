@@ -1,5 +1,3 @@
-# uArm 命令行工具使用教程
-
 ** 注意 **
 在使用这些命令行工具之前，请安装 [uArm CLI](cli_installation.md)
 
