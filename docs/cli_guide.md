@@ -23,6 +23,8 @@
 
 uarm-firmware 可以帮助你升级你的 uArm 固件
 
+<script type="text/javascript" src="https://asciinema.org/a/afvxol4gfoa9y8f1qgjort0ty.js" id="asciicast-afvxol4gfoa9y8f1qgjort0ty" async></script>
+
 你可以使用 `uarm-firmware -h` 列出所有的指令帮助：
 
 ```
@@ -122,6 +124,9 @@ optional arguments:
 
 准备工具做好后，我们可以开始校正
 
+你也可以参照这个视频
+<script type="text/javascript" src="https://asciinema.org/a/8rh8w7r44rh0x4vptx3naunkm.js" id="asciicast-8rh8w7r44rh0x4vptx3naunkm" async></script>
+
 - 打开终端, 输入 `uarm-calibrate` 并回车
 - 程序会自动检测你的校正状态，如果 uArm 已经校正过了，它会再一次提醒你是否需要校正， 如果是请输入『Y』继续：
 ```
@@ -212,3 +217,66 @@ Confirm Please Press Y, Retry press Other Key: y
 Calibration DONE!!
 ```
 - 到此所有的步骤都完成了，恭喜！
+
+## uarm-miniterm
+
+miniterm 是一个迷你的uArm控制台，你可以在上面很简单的实现控制，只需要简单的几行命令。
+
+<script type="text/javascript" src="https://asciinema.org/a/auywv7m5df1ma2nkuzqblgflq.js" id="asciicast-auywv7m5df1ma2nkuzqblgflq" async></script>
+
+在命令行中输入 `uarm-miniterm` ，接下来就能看到这些信息（具体的样式可能跟操作系统有差异）
+
+```
+$ uarm-miniterm
+Welcome to use uArm Command Line - v0.1.3
+Shortcut:
+Quit: Ctrl + D, or input: quit
+Clear Screen: Ctrl + L
+
+Input help for more usage
+```
+
+你可以随时按`Ctrl + D` 或者输入`quit`退出，建议你先输入`help`，看一下有哪些命令可以使用。
+```
+>>> help
+uArm Command line Help Center
+
+Please use connect before any control action
+Shortcut:
+Quit: Ctrl + D, or input: quit
+Clear Screen: Ctrl + L
+
+Documented commands (type help <topic>):
+----------------------------------------
+EOF    connect     firmware   gripper  mv    quit        servo
+alarm  disconnect  get_coord  move_to  pump  read_angle  write_angle
+
+Miscellaneous help topics:
+--------------------------
+msg
+
+Undocumented commands:
+----------------------
+debug  help  set_polar
+```
+如果你对某一个命令感兴趣的，例如，move_to，那我们输入帮助指令：`help move_to`
+
+```
+>>> help move_to
+
+        move_to, move to destination coordinate.
+        format: move_to X Y Z or move_to X Y Z S
+        X,Y,Z unit centimeter, S time - default 2 sec
+        eg. move_to 12 -12 12
+```
+基本上所有的控制指令都需要你先连接uArm，如果你没有连接uArm并使用了控制指令，你会收到以下的提示。
+```
+>>> mv
+No uArm is connected, please use connect
+```
+输入`connect`会自动连接uArm，如果你的电脑有两台以上的uArm连接，会让你选择连接哪个
+```
+>>> connect
+Initialize uArm, port is /dev/cu.usbserial-AI04I17F...
+Firmware Version: 1.7.3
+```
