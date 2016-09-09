@@ -212,9 +212,9 @@ Calibration DONE!!
 
 miniterm is a mini platform for you to accomplish basic controls of uArm by typing simple commands.
 
-(video)
+<script type="text/javascript" src="https://asciinema.org/a/auywv7m5df1ma2nkuzqblgflq.js" id="asciicast-auywv7m5df1ma2nkuzqblgflq" async></script>
 
-1.	Enter uArm Miniterm
+- Enter uArm Miniterm
 Enter `uarm-miniterm`, and you will see the following message (the format of the message may vary according to different operation systems):
 
 ```
@@ -227,7 +227,7 @@ Clear Screen: Ctrl + L
 
 Input help for more usage
 
-2.	Connect with uArm
+- Connect with uArm
 All commands will only work when a uArm is connected. If you are using commands without a uArm connected, you will receive the following message:
 
 ```
@@ -243,9 +243,9 @@ Initialize uArm, port is /dev/cu.usbserial-AI04I17F...
 Firmware Version: 1.7.3
 ```
 
-3.	Control uArm with commands
+- Control uArm with commands
 Enter “help” to see all commands enabled by the miniterm.
-输入help，看一下有哪些命令可以使用。
+
 
 ```
 >>> help
@@ -282,5 +282,5 @@ Enter help move_to and you will get instructions of using this command.
         eg. move_to 12 -12 12
 ```
 
-4.	Quit miniterm
+- Quit miniterm
 Press “Ctrl+D” or enter “quit” to quit anytime you want.
