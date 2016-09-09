@@ -207,3 +207,80 @@ Confirm Please Press Y, Retry press Other Key: y
 Calibration DONE!!
 ```
 - Congratulations! Calibration completed!
+
+## uarm-miniterm
+
+miniterm is a mini platform for you to accomplish basic controls of uArm by typing simple commands.
+
+(video)
+
+1.	Enter uArm Miniterm
+Enter `uarm-miniterm`, and you will see the following message (the format of the message may vary according to different operation systems):
+
+```
+$ uarm-miniterm
+Welcome to use uArm Command Line - v0.1.3
+Shortcut:
+Quit: Ctrl + D, or input: quit
+Clear Screen: Ctrl + L
+```
+
+Input help for more usage
+
+2.	Connect with uArm
+All commands will only work when a uArm is connected. If you are using commands without a uArm connected, you will receive the following message:
+
+```
+>>> mv
+No uArm is connected, please use connect
+```
+
+Enter “connect” to connect uArm with miniterm. If there are more than one uArm connected with your computer, miniterm will ask you to choose one.
+
+```
+>>> connect
+Initialize uArm, port is /dev/cu.usbserial-AI04I17F...
+Firmware Version: 1.7.3
+```
+
+3.	Control uArm with commands
+Enter “help” to see all commands enabled by the miniterm.
+输入help，看一下有哪些命令可以使用。
+
+```
+>>> help
+uArm Command line Help Center
+
+Please use connect before any control action
+Shortcut:
+Quit: Ctrl + D, or input: quit
+Clear Screen: Ctrl + L
+
+Documented commands (type help <topic>):
+----------------------------------------
+EOF    connect     firmware   gripper  mv    quit        servo
+alarm  disconnect  get_coord  move_to  pump  read_angle  write_angle
+
+Miscellaneous help topics:
+--------------------------
+msg
+
+Undocumented commands:
+----------------------
+debug  help  set_polar
+```
+
+Example of command usage:
+Enter help move_to and you will get instructions of using this command.
+
+```
+>>> help move_to
+
+        move_to, move to destination coordinate.
+        format: move_to X Y Z or move_to X Y Z S
+        X,Y,Z unit centimeter, S time - default 2 sec
+        eg. move_to 12 -12 12
+```
+
+4.	Quit miniterm
+Press “Ctrl+D” or enter “quit” to quit anytime you want.
